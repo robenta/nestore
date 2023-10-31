@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+
+:root{
+    --orange: #fc5518;
+    --blue: #173b5f;
+    --white: #fff;
+    --black: #000;
+    --font-family-one: 'Arimo', sans-serif;
+}
+
+
+p{
+    font-size: 18px;
+    font-family: var(--font-family-one);
+}
+
+h3{
+    font-family: var(--font-family-one);
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-toggler{
+        border: none !important;
+        font-size: 45px;
+        box-shadow: none !important;
+        color: var(--orange) !important;
+    }
+    .banner-bg-screen{
+        display: none;
+    }
+    .banner-sm-screen{
+        display: block;
+    }
+    .banner-sm-screen {
+        width: 100%;
+        height: 550px;
+        background-size: cover;
+        object-fit: contain;
+        background-image: -moz-linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, rgba(0, 0, 0, 0.5) ), url(/assets/img/banner.jpg);
+        background-image: -webkit-linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, rgba(0, 0, 0, 0.5) ), url(/assets/img/banner.jpg);
+        filter : progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#FC5518", GradientType=1 );  
+        background-image: linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, rgba(0, 0, 0, 0.5) ), url(/assets/img/banner.jpg);
+        position: relative;
+    }
+    .banner-sm-screen .banner-inner {
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translate(-50%, -50%); 
+        width: 50%;
+        text-align: start;
+    }
+    .banner-sm-screen .banner-inner .span1{
+        font-size: 30px;
+        font-weight: 200;
+        color: #fff;
+    }
+    .banner-sm-screen .banner-inner p{
+        font-size: 40px;
+        color: #fff;
+        font-family: sans-serif;
+        font-weight: 500;
+    }
+    .banner-sm-screen .banner-inner h4{
+        font-family: 'Playfair Display', serif;    
+        font-size: 20px;
+        color: var(--orange);
+    }
+    #about .card img{
+        height: auto;
+        width: auto;
+    }
+} 
+
+@media only screen and (min-width: 768px) {
+    .banner-bg-screen{
+        display: block;
+    }
+    .banner-sm-screen{
+        display: none;
+    }
+
+    .banner-bg-screen {
+        width: 100%;
+        height: 600px;
+        background-size: cover;
+        background-image: -moz-linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, rgba(0, 0, 0, 0.5) ), url(/assets/img/banner.jpg);
+        background-image: -webkit-linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, rgba(0, 0, 0, 0.5) ), url(/assets/img/banner.jpg);
+        filter : progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#FC5518", GradientType=1 );  
+        background-image: linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, rgba(0, 0, 0, 0.5) ), url(/assets/img/banner.jpg);
+        position: relative;
+    }
+    
+    .banner-bg-screen .banner-inner {
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translate(-50%, -50%); 
+        width: 50%;
+        text-align: start;
+    }
+    .banner-bg-screen .banner-inner .span1{
+        font-size: 45px;
+        font-weight: 200;
+        color: #fff;
+    }
+    .banner-bg-screen .banner-inner p{
+        font-size: 60px;
+        color: #fff;
+        font-family: sans-serif;
+        font-weight: 500;
+    }
+    .banner-bg-screen .banner-inner h4{
+        font-family: 'Playfair Display', serif;    
+        font-size: 30px;
+        color: var(--orange);
+    }
+    #about .card img{
+        height: 100px;
+    }
+    
+}
+
+#navbar .nav-item a{
+    text-decoration: none;
+    font-family: var(--font-family-one);
+    color: var(--blue);
+}
+
+#navbar .nav-item a:hover{
+    text-decoration: none;
+    color: var(--orange);
+}
+
+#services .card img{
+    height: 400px;
+    width: auto;
+}
+
+#services i{
+    font-size: 40px;
+}
+
+  
+
+
+
+
+/* GALLERY */
+
+  #galleryrow {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  .image {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  
