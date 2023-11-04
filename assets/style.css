@@ -13,9 +13,9 @@
 }
 
 
-p{
+p, h5{
     font-size: 18px;
-    font-family: var(--font-family-one);
+    font-family: var(--font-family-three);
 }
 
 h2{
@@ -59,7 +59,7 @@ h2{
         width: 80%;
         text-align: start;
     }
-    .banner-sm-screen .banner-inner .span1{
+    .banner-sm-screen .banner-inner .span{
         font-size: 30px;
         font-weight: 200;
         color: #fff;
@@ -134,6 +134,30 @@ h2{
     .carousel-control-prev-icon {
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fc5518' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
     }    
+
+    /* location */
+    /* #location iframe{
+        width: fit-content;
+        height: 60vh;
+    } */
+
+    .responsive-map-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+    }
+    
+    .responsive-map-container iframe,   
+    .responsive-map-container object,  
+    .responsive-map-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 
 } 
 
@@ -250,6 +274,12 @@ h2{
     .carousel-control-prev-icon {
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fc5518' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
     }   
+
+    /* location */
+    #location iframe{
+        width: 100%;
+        height: 60vh;
+    }
 }
 
 
@@ -273,13 +303,6 @@ h2{
 }
 
 
-/* location */
-#location iframe{
-    width: 100%;
-    height: 60vh;
-    margin: 0;
-}
-
 
 /* footer */
 #footer img{
@@ -289,3 +312,36 @@ h2{
     text-decoration: none;
     color: var(--orange);
 }
+
+
+.testimonial-container {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 3rem;
+  }
+  #testimonial {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  #author {
+    font-size: 1.5rem;
+    font-style: italic;
+  }
+  #prev-btn, #next-btn {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  #prev-btn:hover, #next-btn:hover {
+    background-color: #3e8e41;
+  }
