@@ -7,6 +7,7 @@
     --white: #fff;
     --black: #000;
     --font-family-one: 'Arimo', sans-serif;
+    --font-family-two: 'Playfair Display', serif;    
 }
 
 
@@ -63,14 +64,17 @@ h3{
         font-weight: 500;
     }
     .banner-sm-screen .banner-inner h4{
-        font-family: 'Playfair Display', serif;    
+        font-family: var(--font-family-two);    
         font-size: 20px;
         color: var(--orange);
     }
+
+
     #about .card img{
         height: auto;
         width: auto;
     }
+
 } 
 
 @media only screen and (min-width: 768px) {
@@ -112,14 +116,56 @@ h3{
         font-weight: 500;
     }
     .banner-bg-screen .banner-inner h4{
-        font-family: 'Playfair Display', serif;    
+        font-family: var(--font-family-two);   
         font-size: 30px;
         color: var(--orange);
     }
+
+
     #about .card img{
         height: 100px;
     }
     
+    .image-bg-screen {
+        width: 100%;
+        height: 600px; 
+        background-size: cover;
+        background-image: url(/assets/img/Collage\ Maker-04-Nov-2023-08-23-AM-8680.jpg);
+        position: relative;
+    }
+    .image-bg-screen:hover {
+        width: 100%;
+        height: 600px;
+        background-size: cover;
+        background-image: -moz-linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, rgba(0, 0, 0, 0.5) ), url(/assets/img/Collage\ Maker-04-Nov-2023-08-23-AM-8680.jpg);
+        background-image: -webkit-linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, rgba(0, 0, 0, 0.5) ), url(/assets/img/Collage\ Maker-04-Nov-2023-08-23-AM-8680.jpg);
+        filter : progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#FC5518", GradientType=1 );  
+        background-image: linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, rgba(0, 0, 0, 0.5) ), url(/assets/img/Collage\ Maker-04-Nov-2023-08-23-AM-8680.jpg);
+        position: relative;
+    }
+    .image-bg-screen:hover .image-inner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+        width: 20%;
+        text-align: center;
+        border-radius: 10px;
+    }
+    .image-bg-screen .image-inner h1{
+        display: none;
+    }
+    .image-bg-screen:hover .image-inner i{
+        font-size: 35px;
+        transition: 1s ease;
+    }
+    .image-bg-screen:hover .image-inner h1{
+        display: block;
+        transition: 1s ease;
+        font-family: var(--font-family-two);   
+        font-size: 50px;
+        color: var(--white);
+    }
 }
 
 #navbar .nav-item a{
@@ -133,13 +179,33 @@ h3{
     color: var(--orange);
 }
 
-#services .card img{
-    height: 400px;
-    width: auto;
+#about .card{
+    position: relative;
+    height: 20vh;
+    background: hsla(0, 51%, 34%, 1);
+
+    background: linear-gradient(225deg, hsla(0, 51%, 34%, 1) 0%, hsla(16, 97%, 54%, 1) 74%);
+
+    background: -moz-linear-gradient(225deg, hsla(0, 51%, 34%, 1) 0%, hsla(16, 97%, 54%, 1) 74%);
+
+    background: -webkit-linear-gradient(225deg, hsla(0, 51%, 34%, 1) 0%, hsla(16, 97%, 54%, 1) 74%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#822A2A", endColorstr="#FC5518", GradientType=1 );
+}
+#about .card p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 50%;
+    color: var(--white);
+    font-size: 30px;
+    font-family: var(--font-family-one);
 }
 
-#services i{
-    font-size: 40px;
+#offers i{
+    font-size: 45px;
+    color: var(--orange);
 }
 
   
@@ -148,44 +214,21 @@ h3{
 
 
 /* GALLERY */
+.modal img{
+    height: 90vh;
+    width: auto;
+}
+.modal i{
+    color: var(--white);
+    font-size: 30px;
+}
 
-  #galleryrow {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-  }
-  
-  /* Create four equal columns that sits next to each other */
-  .column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-  }
-  
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-  }
-  .image {
-    opacity: 1;
-    display: block;
-    transition: .5s ease;
-  }
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
-  
+
+/* footer */
+#footer img{
+    height: 12vh;
+}
+#footer a {
+    text-decoration: none;
+    color: var(--orange);
+}
