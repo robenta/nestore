@@ -9,10 +9,13 @@
 
     <!-- custom css -->
     <link rel="stylesheet" href="/assets/style.css">
-
+    
+    <!-- aos css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <!-- bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-
+   
     <title>NESTORE</title>
 </head>
 <body>
@@ -53,7 +56,7 @@
 
 
     <!-- Banner -->
-    <section id="banner" class="mpb-5">
+    <section id="banner" class="pb-5"  data-aos="zoom-in" data-aos-duration="2000">
         <!-- banner big screen -->
         <div class="banner-bg-screen" >
             <div class="banner-inner">
@@ -76,7 +79,7 @@
 
     <!-- About -->
 
-    <section id="about" class="pb-5">
+    <section id="about" class="pb-5" data-aos="fade-up" data-aos-duration="2000">
         <div class="container-fluid">
             <h2 class="text-center p-3">About Us</h2>
 
@@ -96,34 +99,34 @@
 
 
     <!-- Offers -->
-    <section id="offers" class="pb-5">
+    <section id="offers" class="pb-5" data-aos="fade-down" data-aos-duration="2000">
         <div class="container-fluid">  
             <h2 class="text-center p-3">What we offer</h2>  
 
             <div class="row">
 
-                <div class="col-md-3">
+                <div class="col-md-3" data-aos="fade-right" data-aos-duration="2000">
                     <div class="text-center"><i class="bi bi-cart-check-fill"></i></div>
                     <h5 class="text-center m-3"><strong>Well-Stocked</strong></h5>
                     <p class="text-center">
                         With our well-stocked store, you can always rely on us to provide your gadget product needs.
                     </p>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3" data-aos="fade-right" data-aos-duration="2000">
                     <div class="text-center"><i class="bi bi-truck"></i></div>
                     <h5 class="text-center m-3"><strong>Delivery</strong></h5>
                     <p class="text-center">
                         We provide swift delivery of your purchased gadgets to any location.
                     </p>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3" data-aos="fade-left" data-aos-duration="2000">
                     <div class="text-center"><i class="bi bi-cash"></i></div>
                     <h5 class="text-center m-3"><strong>Reasonable Prices</strong></h5>
                     <p class="text-center">
                         Our products are reasonably priced for comfortable shopping.
                     </p>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3" data-aos="fade-left" data-aos-duration="2000">
                     <div class="text-center"><i class="bi bi-person-raised-hand"></i></div>
                     <h5 class="text-center m-3"><strong>Excellent customer service</strong></h5>
                     <p class="text-center">
@@ -135,14 +138,8 @@
     </section>
     
 
-    <!-- Services -->
-    <section id="services" class="pb-5">
-        <div class="container"></div>
-    </section>
-
-
     <!-- Gallery -->
-    <section id="gallery" class="pb-5">
+    <section id="gallery" class="pb-5" data-aos="zoom-in-up" data-aos-duration="2000">
         <div class="container-fluid">
             <h2 class="text-center p-3">Gallery</h2>
 
@@ -234,7 +231,7 @@
 
 
     <!-- Location -->
-    <section id="location" class="pb-5">
+    <section id="location" class="pb-5" data-aos="zoom-in" data-aos-duration="1000">
         <div class="container-fluid">
             <h2 class="text-center p-3">Our Location</h2>
 
@@ -245,6 +242,14 @@
                     </div>
                 </div>
             </div> -->
+        </div>
+    </section>
+
+
+    <!-- Testimonial -->
+    <section id="testimonial" class="pb-5" data-aos="fade-up" data-aos-duration="2000">
+        <div class="container">
+
         </div>
     </section>
 
@@ -275,5 +280,14 @@
 
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+    </script>
+    <script>
+        AOS.init();
+    </script>
+    
+
 </body>
 </html>
