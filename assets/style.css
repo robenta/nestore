@@ -21,6 +21,7 @@ p, h5{
 
 h2{
     font-family: var(--font-family-three);
+    color: var(--blue);
 }
 
 #headers hr{
@@ -275,6 +276,7 @@ h2{
     text-decoration: none;
     font-family: var(--font-family-three);
     color: var(--blue);
+    font-weight: 800;
 }
 #navbar .nav-item a:hover{
     text-decoration: none;
@@ -303,6 +305,9 @@ h2{
 }
 #footer i {
     color: var(--orange);
+    background-color: var(--orange-light);
+    padding: 5px;
+    border-radius: 50%;
 }
 #footer p {
     font-size: 13px;
@@ -310,13 +315,16 @@ h2{
 #footer a {
     text-decoration: none;
     color: var(--orange);
-    font-size: 15px;
+    font-size: 13px;
+}
+#footer #contact a{
+    color: var(--black);
 }
 #footer #links a{
     color: var(--black);
-    font-weight: 500;
+    font-weight: 400;
+    font-size: 15px;
 }
-
 #footer span {
     color: var(--orange);
 }
