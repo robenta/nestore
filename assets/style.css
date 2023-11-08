@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
 
 :root{
     --orange: #fc5518;
@@ -102,7 +101,55 @@ h2{
         width: auto;
     }
 
+
+    /* hero */
+    #hero .hero-text p{
+        font-weight: 200 !important;
+        line-height: 35px;
+        font-size: 20px;
+        padding-bottom: 30px;
+    }
+    #hero .hero-text h1{
+        font-family: var(--font-family-three);
+        font-weight: 800;
+    }
+
+
+    /* services */
+    #services .card{
+        height: 38vh;
+    }
+
+
+    /* parallax */
+    #parallax-bg-screen{
+        display: none;
+    }
+    #parallax-sm-screen {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/img2/gadgets2.jpg");
+        height: fit-content;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    #parallax-sm{
+        width: 100%;
+        height: fit-content;
+    }
+    #parallax-sm h1{
+        color: var(--white);
+        font-size: 40px;
+    } 
+    #parallax-sm p{
+        color: var(--white);
+    } 
+
+
     /* gallery */
+    #gallery{
+        background: var(--orange-light);
+    }
     .gallery-bg-screen {
         display: none;
     }
@@ -110,10 +157,10 @@ h2{
         width: 100%;
         height: 300px; 
         background-size: cover;
-        background-image: -moz-linear-gradient(90deg, hsla(0, 0%, 0%, 0.9) 0%, rgba(0, 0, 0, 0.1) ), url(/assets/img/Collage\ Maker-04-Nov-2023-08-23-AM-8680.jpg);
-        background-image: -webkit-linear-gradient(90deg, hsla(0, 0%, 0%, 0.9) 0%, rgba(0, 0, 0, 0.1) ), url(/assets/img/Collage\ Maker-04-Nov-2023-08-23-AM-8680.jpg);
+        background-image: -moz-linear-gradient(90deg, hsla(0, 0%, 0%, 0.9) 0%, rgba(0, 0, 0, 0.1) ), url(/assets/img2/collage.jpg);
+        background-image: -webkit-linear-gradient(90deg, hsla(0, 0%, 0%, 0.9) 0%, rgba(0, 0, 0, 0.1) ), url(/assets/img2/collage.jpg);
         filter : progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#FC5518", GradientType=1 );  
-        background-image: linear-gradient(90deg, hsla(0, 0%, 0%, 0.9) 0%, rgba(0, 0, 0, 0.1) ), url(/assets/img/Collage\ Maker-04-Nov-2023-08-23-AM-8680.jpg);
+        background-image: linear-gradient(90deg, hsla(0, 0%, 0%, 0.9) 0%, rgba(0, 0, 0, 0.1) ), url(/assets/img2/collage.jpg);
         position: relative;
     }
     .gallery-sm-screen .gallery-inner {
@@ -158,7 +205,7 @@ h2{
         background: var(--orange-light);
     }
     .carousel-comment{
-        height: 40vh;
+        height: 35vh;
     }
 
 } 
@@ -213,26 +260,100 @@ h2{
         height: 100px;
     }
     
+    
+    /* services */
+    #services .card{
+        height: 50vh;
+    }
+
+    /* hero */
+    #hero{
+        padding: 20px;
+    }
+    #hero #hero-text-container{
+        position: relative;
+    }
+    #hero .hero-text{
+        position: absolute;
+        top: 30%;
+        left: 20%;
+    }
+    #hero .hero-text p{
+        font-weight: 200 !important;
+        line-height: 35px;
+        font-size: 20px;
+    }
+    #hero .hero-text h1{
+        font-family: var(--font-family-three);
+        color: var(--blue);
+        font-weight: 800;
+    }
+
+
+    /* parallax */
+    #parallax-sm-screen{
+        display: none;
+    }
+    #parallax-bg-screen::before {    
+        content: "";
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-color: rgba(0,0,0,0.70);
+    }
+    #parallax-bg-screen {
+        background-image: url("/assets/img2/gadgets2.jpg");
+        min-height: 550px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        position: relative;
+    } 
+    #parallax-inner-text{
+        position: absolute;
+        top: 20%;
+    }
+    #parallax-inner-text h1{
+        color: var(--white);
+        font-weight: 800;
+        font-size: 60px;
+    } 
+    #parallax-inner-text p{
+        color: white;
+    } 
+
+
     /* gallery */
+    #gallery{
+        background: var(--orange-light);
+    }
     .gallery-sm-screen {
         display: none;
     }
     .gallery-bg-screen {
         width: 100%;
-        height: 600px; 
+        height: 500px; 
         background-size: cover;
-        background-image: url(/assets/img/Collage\ Maker-04-Nov-2023-08-23-AM-8680.jpg);
+        background-image: url(/assets/img2/collage.jpg);
         position: relative;
     }
     .gallery-bg-screen:hover {
         width: 100%;
-        height: 600px;
+        height: 500px;
         transition: 1s ease-in-out;
         background-size: cover;
-        background-image: -moz-linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, rgba(0, 0, 0, 0.5) ), url(/assets/img/Collage\ Maker-04-Nov-2023-08-23-AM-8680.jpg);
-        background-image: -webkit-linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, rgba(0, 0, 0, 0.5) ), url(/assets/img/Collage\ Maker-04-Nov-2023-08-23-AM-8680.jpg);
+        background-image: -moz-linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, rgba(0, 0, 0, 0.5) ), url(/assets/img2/collage.jpg);
+        background-image: -webkit-linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, rgba(0, 0, 0, 0.5) ), url(/assets/img2/collage.jpg);
         filter : progid: DXImageTransform.Microsoft.gradient( startColorstr="#fffff", endColorstr="#FC5518", GradientType=1 );  
-        background-image: linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, rgba(0, 0, 0, 0.5) ), url(/assets/img/Collage\ Maker-04-Nov-2023-08-23-AM-8680.jpg);
+        background-image: linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, rgba(0, 0, 0, 0.5) ), url(/assets/img2/collage.jpg);
         position: relative;
     }
     .gallery-bg-screen:hover .gallery-inner {
@@ -296,6 +417,13 @@ h2{
     color: var(--orange);
 }
 
+/* carousel */
+/* #carousel-banner #carousel-item{
+    position: relative;
+}
+#carousel-banner .carousel-inner-text{
+    position: absolute;
+} */
 
 /* services */
 #services {
@@ -308,6 +436,8 @@ h2{
     font-size: 45px;
     color: var(--orange);
 }
+
+
 
 
 /* contact */
@@ -386,5 +516,15 @@ input:focus, input.form-control:focus {
 #footer span {
     color: var(--orange);
 }
+
+/* fixed arrow */
+#arrow i{
+    font-size: 40px;
+    color:  var(--orange);
+}
+
+
+
+
 
 
