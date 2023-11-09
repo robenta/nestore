@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@600;200;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
 
 :root{
     --orange: #fc5518;
@@ -21,6 +21,7 @@
 
 p, h5{
     font-size: 18px;
+    line-height: 35px;
     font-family: var(--font-family-three);
 }
 #headers2 h4{
@@ -103,12 +104,6 @@ h2{
 
 
     /* hero */
-    #hero .hero-text p{
-        font-weight: 200 !important;
-        line-height: 35px;
-        font-size: 20px;
-        padding-bottom: 30px;
-    }
     #hero .hero-text h1{
         font-family: var(--font-family-three);
         font-weight: 800;
@@ -117,7 +112,7 @@ h2{
 
     /* services */
     #services .card{
-        height: 38vh;
+        height: 40vh;
     }
 
 
@@ -239,14 +234,16 @@ h2{
     }
     .banner-bg-screen .banner-inner .span{
         font-size: 45px;
-        font-weight: 200;
+        font-weight: 100;
         color: #fff;
+        font-family: var(--font-family-one);
     }
     .banner-bg-screen .banner-inner p{
+        padding-top: 20px;
         font-size: 50px;
         color: #fff;
         font-family: var(--font-family-one);
-        font-weight: 500;
+        font-weight: 900;
     }
     .banner-bg-screen .banner-inner h4{
         font-family: var(--font-family-two);   
@@ -263,7 +260,7 @@ h2{
     
     /* services */
     #services .card{
-        height: 50vh;
+        height: 55vh;
     }
 
     /* hero */
@@ -275,18 +272,13 @@ h2{
     }
     #hero .hero-text{
         position: absolute;
-        top: 30%;
+        top: 15%;
         left: 20%;
-    }
-    #hero .hero-text p{
-        font-weight: 200 !important;
-        line-height: 35px;
-        font-size: 20px;
     }
     #hero .hero-text h1{
         font-family: var(--font-family-three);
         color: var(--blue);
-        font-weight: 800;
+        font-weight: 900;
     }
 
 
@@ -306,20 +298,17 @@ h2{
     }
     #parallax-bg-screen {
         background-image: url("/assets/img2/gadgets2.jpg");
-        min-height: 550px;
+        min-height: 560px;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
         position: relative;
     } 
     #parallax-inner-text{
         position: absolute;
-        top: 20%;
+        top: 15%;
     }
     #parallax-inner-text h1{
         color: var(--white);
@@ -418,12 +407,7 @@ h2{
 }
 
 /* carousel */
-/* #carousel-banner #carousel-item{
-    position: relative;
-}
-#carousel-banner .carousel-inner-text{
-    position: absolute;
-} */
+
 
 /* services */
 #services {
