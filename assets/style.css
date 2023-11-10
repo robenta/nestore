@@ -204,7 +204,10 @@ h2{
         background: var(--orange-light);
     }
     .carousel-comment{
-        height: 35vh;
+        height: 40vh;
+    }
+    .carousel-comment h5{
+        font-weight: 800;
     }
     .testimonial-image i{
         font-size: 30px;
@@ -399,6 +402,9 @@ h2{
     /* testimonial */
     #testimonial{
         background: var(--orange-light);
+    }
+    .carousel-comment h5{
+        font-weight: 800;
     }
     .carousel-comment{
         height: 45vh;
