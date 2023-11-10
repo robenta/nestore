@@ -206,6 +206,14 @@ h2{
     .carousel-comment{
         height: 35vh;
     }
+    .testimonial-image i{
+        font-size: 30px;
+        color: var(--orange);
+        border: 3px solid var(--white);
+        border-radius: 50%;
+        padding: 10px;
+        background-color: var(--white);
+    }
 
 } 
 
@@ -393,7 +401,15 @@ h2{
         background: var(--orange-light);
     }
     .carousel-comment{
-        height: 40vh;
+        height: 45vh;
+    }
+    .testimonial-image i{
+        font-size: 30px;
+        color: var(--orange);
+        border: 3px solid var(--white);
+        border-radius: 50%;
+        padding: 10px;
+        background-color: var(--white);
     }
 }
 
