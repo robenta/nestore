@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
 
   <!-- bootstrap css -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -17,6 +18,9 @@
 
   <!-- bootstrap icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="/assets/img/logo.jpg" type="image/x-icon">
 
   <title>NESTORE</title>
 </head>
@@ -114,47 +118,51 @@
   <!-- Services -->
   <section id="services" class="pb-5" data-aos="fade-down" data-aos-duration="1000">
     <br>
-    <div class="container-fluid">
+    <div class="container-fluid px-4">
       <div class="d-block p-4" id="headers">
         <h2 class="text-center p-3">Our Services</h2>
         <hr>
       </div>
       <div class="row" data-aos="fade-right" data-aos-duration="1000">
-        <div class="col-md-3 p-3">
-          <div class="card rounded-0 p-4 border border-white">
+        <div class="col-md-3 p-2">
+          <div class="card rounded-0 border border-white bg-">
             <div class="text-center"><i class="bi bi-cart-check-fill"></i></div>
             <h5 class="text-center m-3"><strong>Well-Stocked Store</strong></h5>
-            <p class="text-center">
+            <p class="text-center p-1">
               With our well-stocked store, you can always rely on us to provide your gadget product needs.
             </p>
+            <br>
           </div>
         </div>
-        <div class="col-md-3 p-3">
-          <div class="card rounded-0 p-4 border border-white">
+        <div class="col-md-3 p-2">
+          <div class="card rounded-0 border border-white">
             <div class="text-center"><i class="bi bi-truck"></i></div>
             <h5 class="text-center m-3"><strong>Logistics</strong></h5>
-            <p class="text-center">
+            <p class="text-center p-1">
               We provide swift delivery of your purchased gadgets or any item to any location with our logistics
               service.
             </p>
+            <br>
           </div>
         </div>
-        <div class="col-md-3 p-3">
-          <div class="card rounded-0 p-4 border border-white">
+        <div class="col-md-3 p-2">
+          <div class="card rounded-0 border border-white">
             <div class="text-center"><i class="bi bi-cash"></i></div>
             <h5 class="text-center m-3"><strong>Reasonable Prices</strong></h5>
-            <p class="text-center">
-              Our products are reasonably priced for comfortable shopping.
+            <p class="text-center p-1">
+              Our products are reasonably priced for a comfortable shopping experience for you.
             </p>
+            <br>
           </div>
         </div>
-        <div class="col-md-3 p-3">
-          <div class="card rounded-0 p-4 border border-white">
+        <div class="col-md-3 p-2">
+          <div class="card rounded-0 border border-white">
             <div class="text-center"><i class="bi bi-person-raised-hand"></i></div>
             <h5 class="text-center m-3"><strong>Excellent customer service</strong></h5>
-            <p class="text-center">
-              We aim for customer satisfaction and that is why we provide good customer service.
+            <p class="text-center p-1">
+              Customer satisfaction is our aim. And so we provide good customer service!
             </p>
+            <br>
           </div>
         </div>
       </div>
@@ -163,16 +171,47 @@
 
 
   <!-- Hero banner -->
-  <section id="hero" data-aos="flip-left" data-aos-duration="1000">
-    <div class="container-fluid">
+  <section id="hero-bg-screen" class="d-none d-md-block d-lg-block d-xl-block d-xxl-block" data-aos="flip-up"
+    data-aos-duration="1000">
+    <div class="container-fluid" id="hero-text-container">
+      <h1 class="text-start py-4 d-none d-md-block d-lg-none d-xl-none d-xxl-none">Elevate Your Tech Experience with us
+      </h1>
+      <div class="row">
+        <div class="col-md-5">
+          <div class="hero-image">
+            <img src="/assets/img/beats.png" alt="image" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="mt-5 mt-md-2 pt-lg-5 pt-xl-5 pt-xxl-5">
+            <h1 class="pb-4 d-none d-lg-block d-xl-block d-xxl-block">Elevate Your Tech Experience with us </h1>
+            <p class="">
+              Discover a carefully curated selection of
+              the latest gadgets and devices that will
+              redefine your relationship with technology.
+              From sleek smartphones to smart home solutions,
+              we've handpicked the finest, cutting-edge
+              products to enhance your digital lifestyle.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="hero-sm-screen" class="d-block d-md-none d-lg-none d-xl-none d-xxl-none" data-aos="flip-left"
+    data-aos-duration="1000">
+    <div class="container-fluid" id="hero-text-container">
+      <h1 class="py-4">Elevate Your Tech Experience with us </h1>
       <div class="row">
         <div class="col-md-6">
-          <img src="/assets/img/beats.png" alt="image" class="img-fluid">
+          <div class="hero-image">
+            <img src="/assets/img/beats.png" alt="image" class="img-fluid">
+          </div>
         </div>
-        <div class="col-md-6" id="hero-text-container">
-          <div class="hero-text">
-            <h1>Elevate Your Tech <br> Experience with us </h1>
-            <p class="pt-4 fw-light">
+        <div class="col-md-6">
+          <div class="mt-4">
+            <p class="">
               Discover a carefully curated selection of
               the latest gadgets and devices that will
               redefine your relationship with technology.
@@ -187,26 +226,30 @@
   </section>
 
 
+
   <!-- Parallax -->
-  <section id="parallax-bg-screen">
+  <section id="parallax-bg-screen" class="d-none d-md-block d-lg-block d-xl-block d-xxl-block">
     <div class="container-fluid parallax">
-      <div class="container" id="parallax-inner-text">
+      <div class="container-fluid" id="parallax-inner-text">
+        <h1 class="pb-4 d-none d-md-block d-lg-none d-xl-none d-xxl-none">We offer stress-free phone swaps</h1>
         <div class="row">
-          <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
-            <h1 class="pb-4">We offer stress-free phone swaps</h1>
-            <p>
-              Unlock the possibilities with our phone swap service!
-              At Nestore Technologies, we make upgrading to the latest
-              smartphone a breeze. Trade in your old device and step
-              into the future with the newest models. Enjoy a seamless
-              transition, top-currency trade-in values, and a world of
-              enhanced features. It's time to swap and stay connected
-              with the best at Nestore Technologies.
-            </p>
+          <div class="col-md-7">
+            <div class="ps-5">
+              <h1 class="pb-4 d-none d-lg-block d-xl-block d-xxl-block">We offer stress-free phone swaps</h1>
+              <p class="">
+                Unlock the possibilities with our phone swap service!
+                At Nestore Technologies, we make upgrading to the latest
+                smartphone a breeze. Trade in your old device and step
+                into the future with the newest models. Enjoy a seamless
+                transition, top-currency trade-in values, and a world of
+                enhanced features. It's time to swap and stay connected
+                with the best at Nestore Technologies.
+              </p>
+            </div>
           </div>
-          <div class="col-md-6 ps-5 pt-5" data-aos="fade-left" data-aos-duration="1000">
-            <div class="card border border-3 border-white">
-              <img src="/assets/img/phoneswap.jpeg" class="img-fluid" alt="image">
+          <div class="col-md-5">
+            <div class="parallax-image">
+              <img src="/assets/img/phoneswap.jpeg" alt="" class="img-fluid">
             </div>
           </div>
         </div>
@@ -214,7 +257,8 @@
     </div>
   </section>
 
-  <section id="parallax-sm-screen" data-aos="fade-right" data-aos-duration="1000">
+  <section id="parallax-sm-screen" class="d-block d-md-none d-lg-none d-xl-none d-xxl-none" data-aos="fade-right"
+    data-aos-duration="1000">
     <div class="container-fluid p-3">
       <div class="container pt-3" id="parallax-sm">
         <div class="row">
@@ -241,44 +285,24 @@
   </section>
 
 
-
   <!-- Gallery -->
-  <section id="gallery">
-    <br>
-    <div class="d-block p-4" id="headers">
-      <h2 class="text-center">Gallery</h2>
-      <hr>
-    </div>
-
-    <!-- gallery big screen-->
-    <div class="gallery-bg-screen" type="button" class="btn btn-primary" data-bs-toggle="modal"
-      data-bs-target="#exampleModal">
-      <div class="gallery-inner">
-        <h1> CLICK <i class="bi bi-hand-index-thumb-fill"></i></h1>
+  <section id="gallery-bg-screen" class="d-none d-md-block d-lg-block d-xl-block d-xxl-block">
+    <div class="container-fluid">
+      <div class="d-block py-4" id="headers">
+        <h2 class="text-center">Gallery</h2>
+        <hr>
       </div>
-    </div>
-
-    <!-- gallery small screen-->
-    <div class="gallery-sm-screen" type="button" class="btn btn-primary" data-bs-toggle="modal"
-      data-bs-target="#exampleModal">
-      <div class="gallery-inner">
-        <h1> CLICK <i class="bi bi-hand-index-thumb-fill"></i></h1>
-      </div>
-    </div>
-
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content bg-transparent border-0">
-          <div class="modal-body">
-
-            <i class="bi bi-x-lg" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></i>
-
+  
+      <div class="row py-5">
+        <div class="col-md-6 col-lg-7 col-xl-7 col-xxl-7">
+          <div class="gallery-image">
             <div class="card border-white border-2 rounded-0">
               <div id="carouselExample" class="carousel slide border-5">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
+                    <img src="/assets/img/photo12.jpg" class="d-block w-100 img-fluid" alt="image">
+                  </div>
+                  <div class="carousel-item">
                     <img src="/assets/img/photo1.jpg" class="d-block w-100 img-fluid" alt="image">
                   </div>
                   <div class="carousel-item">
@@ -374,78 +398,201 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <br><br>
-  </section>
-
-
-  <!-- Contact -->
-  <section id="contact" data-aos="fade-down" data-aos-duration="1000">
-    <br>
-    <div class="container-fluid">
-      <div class="d-block p-4" id="headers">
-        <h2 class="text-center">Contact Us</h2>
-        <hr>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="d-block pt-3" id="headers2">
-            <h4 class="text-center">Get in touch</h4>
+        <div class="col-md-6 col-lg-5 col-xl-5 col-xxl-5">
+          <div class="row py-2 g-3">
+            <p>
+              Check out our gallery for some items we have to offer.
+            </p>
+            <div class="col-md-4">
+              <div class="gallery-grid-images d-flex justify-content-center m-auto">
+                <img src="/assets/img/photo12.jpg" class="img-fluid" alt="">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="gallery-grid-images d-flex justify-content-center m-auto">
+                <img src="/assets/img/photo13.jpg" class="img-fluid" alt="">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="gallery-grid-images d-flex justify-content-center m-auto">
+                <img src="/assets/img/photo17.jpg" class="img-fluid" alt="">
+              </div>
+            </div>
           </div>
-          <form id="form">
-            <div class="form-group p-3">
-              <label for="name" class="pb-2">Name</label>
-              <input type="text" id="name" class="form-control">
+          <div class="row py-2 g-3">
+            <div class="col-md-4">
+              <div class="gallery-grid-images d-flex justify-content-center m-auto">
+                <img src="/assets/img/photo20.jpg" class="img-fluid" alt="">
+              </div>
             </div>
-            <div class="form-group p-3">
-              <label for="email" class="pb-2">Email</label>
-              <input type="email" id="email" class="form-control">
+            <div class="col-md-4">
+              <div class="gallery-grid-images d-flex justify-content-center m-auto">
+                <img src="/assets/img/photo21.jpg" class="img-fluid" alt="">
+              </div>
             </div>
-            <div class="form-group p-3">
-              <label for="number" class="pb-2">Phone</label>
-              <input type="tel" id="number" class="form-control">
-            </div>
-            <div class="form-group p-3">
-              <label for="message" class="pb-2">Message</label>
-              <textarea name="" id="message" cols="30" rows="5" class="form-control" required></textarea>
-            </div>
-            <div class="d-grid p-2">
-              <button type="submit" class="btn btn-info mt-3">Submit</button>
-            </div>
-          </form>
-        </div>
-        <div class="col-md-6">
-          <div class="d-block pt-3" id="headers2">
-            <h4 class="text-center">Our address</h4>
-          </div>
-          <div class="mb-3">
-            <div class="ratio ratio-4x3" id="map">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.321392518912!2d3.3502435!3d6.606926499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b93a5debd1689%3A0x782fb5fecd1bd555!2sNestore%20Technolgies!5e0!3m2!1sen!2sng!4v1699116204102!5m2!1sen!2sng"
-                width="400" height="200" frameborder="0" style="border:0" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade" class="responsive-iframe p-1">
-              </iframe>
-            </div>
-            <div class="d-block pt-3" id="headers2">
-              <h4 class="text-center">Stay in touch</h4>
-            </div>
-            <div class="p-2" id="socials">
-              <div class="d-flex justify-content-evenly">
-                <a href="https://www.instagram.com/nextgadgetz/"><i class="bi bi-instagram"></i></a>
-                <a href="https://wa.me/2349060006814?text=Hello%20I%27d%20like%20to%20make%20an%20enquiry"><i
-                    class="bi bi-whatsapp"></i></a>
-                <a href="https://nestore.netlify.app"><i class="bi bi-globe"></i></a>
-                <a href="mailto:nestoretech@gmail.com"><i class="bi bi-envelope"></i></a>
-                <a href="mailto:nestoretech@gmail.com"><i class="bi bi-telephone"></i></a>
+            <div class="col-md-4">
+              <div class="gallery-grid-images d-flex justify-content-center m-auto">
+                <img src="/assets/img/photo18.jpg" class="img-fluid" alt="">
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
 
+  </section>
+  
+  <section id="gallery-sm-screen" class="d-block d-md-none d-lg-none d-xl-none d-xxl-none">
+    <div class="container-fluid">
+
+      <div class="d-block py-4" id="headers">
+        <h2 class="text-center">Gallery</h2>
+        <hr>
+      </div>
+  
+      <div class="row py-5">
+        <div class="col-md-5">
+          <div class="gallery-image">
+            <div id="carouselExample2" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/assets/img/photo12.jpg" class="d-block w-100 img-fluid" alt="image">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/photo1.jpg" class="d-block w-100 img-fluid" alt="image">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/photo2.jpg" class="d-block w-100 img-fluid" alt="image">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/photo3.jpg" class="d-block w-100 img-fluid" alt="image">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/photo4.jpg" class="d-block w-100 img-fluid" alt="image">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/photo5.jpg" class="d-block w-100 img-fluid" alt="image">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/photo6.jpg" class="d-block w-100 img-fluid" alt="image">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/photo7.jpg" class="d-block w-100 img-fluid" alt="image">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/photo8.jpg" class="d-block w-100 img-fluid" alt="image">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/photo9.jpg" class="d-block w-100 img-fluid" alt="image">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/photo10.jpg" class="d-block w-100 img-fluid" alt="image">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/photo11.jpg" class="d-block w-100 img-fluid" alt="image">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/photo12.jpg" class="d-block w-100 img-fluid" alt="image">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/photo13.jpg" class="d-block w-100 img-fluid" alt="image">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/photo14.jpg" class="d-block w-100 img-fluid" alt="image">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/photo15.jpg" class="d-block w-100 img-fluid" alt="image">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/photo16.jpg" class="d-block w-100 img-fluid" alt="image">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/photo17.jpg" class="d-block w-100 img-fluid" alt="image">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/photo18.jpg" class="d-block w-100 img-fluid" alt="image">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/photo19.jpg" class="d-block w-100 img-fluid" alt="image">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/photo20.jpg" class="d-block w-100 img-fluid" alt="image">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/photo21.jpg" class="d-block w-100 img-fluid" alt="image">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/photo22.jpg" class="d-block w-100 img-fluid" alt="image">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/photo23.jpg" class="d-block w-100 img-fluid" alt="image">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/photo24.jpg" class="d-block w-100 img-fluid" alt="image">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/photo25.jpg" class="d-block w-100 img-fluid" alt="image">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/photo26.jpg" class="d-block w-100 img-fluid" alt="image">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/photo27.jpg" class="d-block w-100 img-fluid" alt="image">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="row py-2 g-3">
+            <div class="col-4">
+              <div class="gallery-grid-images d-flex justify-content-center m-auto">
+                <img src="/assets/img/photo12.jpg" class="img-fluid" alt="">
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="gallery-grid-images d-flex justify-content-center m-auto">
+                <img src="/assets/img/photo13.jpg" class="img-fluid" alt="">
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="gallery-grid-images d-flex justify-content-center m-auto">
+                <img src="/assets/img/photo17.jpg" class="img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="row py-2 g-3">
+            <div class="col-4">
+              <div class="gallery-grid-images d-flex justify-content-center m-auto">
+                <img src="/assets/img/photo20.jpg" class="img-fluid" alt="">
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="gallery-grid-images d-flex justify-content-center m-auto">
+                <img src="/assets/img/photo21.jpg" class="img-fluid" alt="">
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="gallery-grid-images d-flex justify-content-center m-auto">
+                <img src="/assets/img/photo18.jpg" class="img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
 
 
   <!-- Testimonial -->
@@ -453,24 +600,25 @@
     <br>
     <div class="container-fluid feedback">
       <div class="d-block p-4" id="headers">
-        <h2 class="text-center">Customer Reviews</h2>
+        <h2 class="text-center">Testimonials</h2>
         <hr>
       </div>
       <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="row d-flex justify-content-center text-center">
-              <div class="col-md-8">
+              <div class="col-md-10">
                 <div class="carousel-comment">
                   <br>
                   <div class="testimonial-image">
                     <i class="bi bi-person-fill"></i>
                   </div>
-                  <p class="p-3 m-4">If you're looking for a store that you can always get authentic gadgets, just head
+                  <p class="p-5">If you're looking for a store that you can always get authentic gadgets, just head
                     to
                     Nestore. </p>
                   <br>
                   <h5>Effiong</h5>
+                  <br><br>
                 </div>
               </div>
             </div>
@@ -483,9 +631,10 @@
                   <div class="testimonial-image">
                     <i class="bi bi-person-fill"></i>
                   </div>
-                  <p class="p-3 m-4">I don't go to any other store. Nestore always.</p>
+                  <p class="p-5">I don't go to any other store but Nestore. They cater to my every gadget needs.</p>
                   <br>
                   <h5>Mr Micheal</h5>
+                  <br><br>
                 </div>
               </div>
             </div>
@@ -498,11 +647,12 @@
                   <div class="testimonial-image">
                     <i class="bi bi-person-fill"></i>
                   </div>
-                  <p class="p-3 m-4">I got ipads for my kids and airpods for myself here with no problems. I love
+                  <p class="p-5">I got ipads for my kids and airpods for myself here with no problems. I love
                     Nestore.
                   </p>
                   <br>
                   <h5>Mrs Bosun</h5>
+                  <br><br>
                 </div>
               </div>
             </div>
@@ -515,9 +665,10 @@
                   <div class="testimonial-image">
                     <i class="bi bi-person-fill"></i>
                   </div>
-                  <p class="p-3 m-4">I love getting my gadgets from here because the prices are always affordable.</p>
+                  <p class="p-5">I love getting my gadgets from here because the prices are always affordable.</p>
                   <br>
                   <h5>Grace</h5>
+                  <br><br>
                 </div>
               </div>
             </div>
@@ -530,9 +681,10 @@
                   <div class="testimonial-image">
                     <i class="bi bi-person-fill"></i>
                   </div>
-                  <p class="p-3 m-4">The customer service was top notch. I'm happy I shopped at Nestore.</p>
+                  <p class="p-5">The customer service was top notch. Very patient. I'm happy I shopped at Nestore.</p>
                   <br>
                   <h5>Oge</h5>
+                  <br><br>
                 </div>
               </div>
             </div>
@@ -545,11 +697,11 @@
                   <div class="testimonial-image">
                     <i class="bi bi-person-fill"></i>
                   </div>
-                  <p class="p-3 m-4">I had an easy shopping experience even though i'm not tech-savvy. They will be my
-                    go-to store from
-                    now henceforth.</p>
+                  <p class="p-5">I had an easy shopping experience even though i'm not tech-savvy. They will be my
+                    go-to store.</p>
                   <br>
                   <h5>Nelson</h5>
+                  <br><br>
                 </div>
               </div>
             </div>
@@ -562,10 +714,11 @@
                   <div class="testimonial-image">
                     <i class="bi bi-person-fill"></i>
                   </div>
-                  <p class="p-3 m-4">I have been a loyal customer for years because they have not disappointed me once.
+                  <p class="p-5">I have been a loyal customer for years because they have not disappointed me once.
                   </p>
                   <br>
                   <h5>Yinka</h5>
+                  <br><br>
                 </div>
               </div>
             </div>
@@ -586,19 +739,121 @@
   </section>
 
 
+  <!-- Contact -->
+  <section id="contact" data-aos="fade-down" data-aos-duration="1000">
+    <br>
+    <div class="container-fluid px-4">
+      <div class="d-block p-4" id="headers">
+        <h2 class="text-center">Contact Us</h2>
+        <hr>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <form action="" id="form" class="shadow shadow-md">
+            <div class="d-block p-3" id="headers2">
+              <h4 class="text-center">Get in touch</h4>
+            </div>
+            <div class="form-group p-3">
+              <label for="name" class="pb-2">Name</label>
+              <input type="text" id="name" class="form-control">
+            </div>
+            <div class="form-group p-3">
+              <label for="email" class="pb-2">Email</label>
+              <input type="email" id="email" class="form-control">
+            </div>
+            <div class="form-group p-3">
+              <label for="number" class="pb-2">Phone</label>
+              <input type="tel" id="number" class="form-control">
+            </div>
+            <div class="form-group p-3">
+              <label for="message" class="pb-2">Message</label>
+              <textarea name="" id="message" cols="30" rows="6" class="form-control" required></textarea>
+            </div>
+            <div class="d-grid p-3">
+              <button type="submit" class="btn btn-info mt-2">Submit</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <div class="shadow shadow-md mt-4 mt-md-0 mt-lg-0 mt-xl-0 mt-xxl-0">
+            <div class="d-block p-4" id="headers2">
+              <h4 class="text-center">Our address</h4>
+            </div>
+            <div class="ratio ratio-1x1">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.321392518912!2d3.3502435!3d6.606926499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b93a5debd1689%3A0x782fb5fecd1bd555!2sNestore%20Technolgies!5e0!3m2!1sen!2sng!4v1699116204102!5m2!1sen!2sng"
+                width="400" height="200" frameborder="0" style="border:0" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" class="responsive-iframe p-1">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick links -->
+  <section id="quick-links">
+    <div class="container-fluid text-center py-3 mt-5 d-none d-md-block d-lg-block d-xl-block d-xxl-block">
+      <div class="row">
+        <div class="col-md-2">
+          <a href="/index.html">Home</a>
+        </div>
+        <div class="col-md-2">
+          <a href="#about">About</a>
+        </div>
+        <div class="col-md-2">
+          <a href="#services">Services</a>
+        </div>
+        <div class="col-md-2">
+          <a href="#gallery">Gallery</a>
+        </div>
+        <div class="col-md-2">
+          <a href="#testimonial">Testimonials</a>
+        </div>
+        <div class="col-md-2">
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid text-center py-3 mt-5 d-block d-md-none d-lg-none d-xl-none d-xxl-none">
+      <div class="row">
+        <div class="col-3">
+          <a href="/index.html">Home</a>
+        </div>
+        <div class="col-3">
+          <a href="#about">About</a>
+        </div>
+        <div class="col-3">
+          <a href="#services">Services</a>
+        </div>
+        <div class="col-3">
+          <a href="#gallery">Gallery</a>
+        </div>
+      </div>
+      <div class="row pt-1">
+        <div class="col-6">
+          <a href="#testimonial">Testimonials</a>
+        </div>
+        <div class="col-6">
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
   <!-- Footer -->
   <section id="footer">
-    <br>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-4 pt-sm-1">
-          <a href="/index.html"><img src="/assets/img/logo.jpg" class="img-fluid" alt="nestore-logo"></a>
-          <div class="d-flex gap-2 pt-2" id="links">
-            <a href="index.html">Home</a> <span>|</span><a href="#about">About</a> <span>|</span><a
-              href="#services">Services</a> <span>|</span><a href="#gallery">Gallery</a> <span>|</span><a
-              href="#contact">Contact</a>
+        <div class="col-md-5 pt-sm-1">
+          <div class="px-3">
+            <a href="/index.html"><img src="/assets/img/logo.jpg" class="img-fluid" alt="nestore-logo"></a>
+            <p class="px-4"> &copy; Nestore Technologies</p>
           </div>
-          <p class="pt-3"> &copy; Nestore Technologies</p>
         </div>
 
         <div class="col-md-4 pt-md-5">
@@ -620,7 +875,7 @@
           </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-3">
           <div class="d-flex gap-2 pt-2">
             <h5> About the company</h5>
           </div>
@@ -634,25 +889,22 @@
             <a href="https://www.instagram.com/nextgadgetz/"><i class="bi bi-instagram"></i></a>
             <a href="https://wa.me/2349060006814?text=Hello%20I%27d%20like%20to%20make%20an%20enquiry"><i
                 class="bi bi-whatsapp"></i></a>
-            <a href="https://nestore.netlify.app"><i class="bi bi-globe"></i></a>
+            <a href="https://nestore.ng/"><i class="bi bi-globe"></i></a>
             <a href="mailto:nestoretech@gmail.com"><i class="bi bi-envelope"></i></a>
           </div>
         </div>
       </div>
       <hr>
-      <p class="text-center">
-        Site developed by <a href="https://robentasportfolio.netlify.app">Robenta</a>
-      </p>
-    </div>
-  </section>
-
-
-  <!-- Fixed arrow -->
-  <section id="arrow">
-    <div class="text-end arrow fixed-bottom p-1">
-      <a href="#top" data-mdb-toggle="tooltip" data-bs-html="true" data-mdb-placement="top" title="Back to top">
-        <i class="bi bi-arrow-up-square-fill"></i>
-      </a>
+      <div class="d-flex justify-content-between pt-5">
+        <!-- <p class="pb-3">
+          Site developed by <a href="https://robentasportfolio.netlify.app">Robenta</a>
+        </p> -->
+        <div class="text-end p-1 fixed-bottom" id="arrow">
+          <a href="#top" data-mdb-toggle="tooltip" data-bs-html="true" data-mdb-placement="top" title="Back to top">
+            <i class="bi bi-arrow-up-square-fill"></i>
+          </a>
+        </div>
+      </div>
     </div>
   </section>
 

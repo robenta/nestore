@@ -4,13 +4,13 @@
 
 :root{
     --orange: #fc5518;
-    --orange-light: hwb(18 90% 0%);
+    --orange-light: #ffede6;
     --orange-dark: #e64500;
     --blue: #173b5f;
     --white: #fff;
     --black: #000;
     --grey: #f5f3f3;
-    --font-family-one: 'Arimo', sans-serif;
+    /* --font-family-one: 'Arimo', sans-serif; */
     --font-family-two: 'Playfair Display', serif; 
     --font-family-three: 'Merriweather', serif;   
 }
@@ -20,9 +20,10 @@
 }
 
 p, h5{
-    font-size: 18px;
+    font-size: 20px;
     line-height: 32px;
     font-family: var(--font-family-three);
+    letter-spacing: 1px;
 }
 #headers2 h4{
     font-family: var(--font-family-three);
@@ -100,24 +101,20 @@ h2{
     }
 
 
-    /* about */
-    #about .card img{
-        height: auto;
-        width: auto;
-    }
-
-
     /* hero */
-    #hero .hero-text h1{
-        font-family: var(--font-family-three);
+    #hero-bg-screen{
+        display: none;
+    }
+    #hero-text-container .hero-image{
+        max-width: 100%;
+        height: auto;
+    }
+    #hero-text-container h1{
+        color: var(--blue);
         font-weight: 800;
-    }
-
-
-    /* services */
-    #services .card{
-        height: 40vh;
-    }
+        font-size: 40px;
+        font-family: var(--font-family-three);
+    } 
 
 
     /* parallax */
@@ -139,6 +136,8 @@ h2{
     #parallax-sm h1{
         color: var(--white);
         font-size: 40px;
+        font-family: var(--font-family-three);
+        font-weight: 700;
     } 
     #parallax-sm p{
         color: var(--white);
@@ -146,50 +145,16 @@ h2{
 
 
     /* gallery */
-    #gallery{
-        background: var(--orange-light);
-    }
     .gallery-bg-screen {
         display: none;
     }
-    .gallery-sm-screen {
-        width: 100%;
-        height: 300px; 
-        background-size: cover;
-        background-image: -moz-linear-gradient(90deg, hsla(0, 0%, 0%, 0.9) 0%, rgba(0, 0, 0, 0.1) ), url(/assets/img/collage.jpg);
-        background-image: -webkit-linear-gradient(90deg, hsla(0, 0%, 0%, 0.9) 0%, rgba(0, 0, 0, 0.1) ), url(/assets/img/collage.jpg);
-        filter : progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#FC5518", GradientType=1 );  
-        background-image: linear-gradient(90deg, hsla(0, 0%, 0%, 0.9) 0%, rgba(0, 0, 0, 0.1) ), url(/assets/img/collage.jpg);
-        position: relative;
+    .gallery-image img{
+        height: 600px;
+        width: 500px;
     }
-    .gallery-sm-screen .gallery-inner {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); 
-        width: 50%;
-        text-align: center;
-    }
-    .gallery-sm-screen .gallery-inner h1{
-        display: none;
-    }
-    .gallery-sm-screen .gallery-inner i{
-        font-size: 25px;
-        transition: 1s ease;
-    }
-    .gallery-sm-screen .gallery-inner h1{
-        display: block;
-        transition: 1s ease;
-        font-family: var(--font-family-two);   
-        font-size: 35px;
-        color: var(--white);
-    }
-    .modal img{
-        height: 60vh;
-    }
-    .modal i{
-        color: var(--orange);
-        font-size: 40px;
+    .gallery-grid-images img{
+        height: 150px;
+        width: 200px;
     }
     .carousel-control-next-icon {
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fc5518' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
@@ -202,9 +167,6 @@ h2{
     /* testimonial */
     #testimonial{
         background: var(--orange-light);
-    }
-    .carousel-comment{
-        height: 40vh;
     }
     .carousel-comment h5{
         font-weight: 800;
@@ -265,37 +227,50 @@ h2{
         font-size: 30px;
         color: var(--orange);
     }
-
-
-    /* about */
-    #about .card img{
-        height: 100px;
-    }
     
-    
-    /* services */
-    #services .card{
-        height: 55vh;
-    }
-
     /* hero */
-    #hero{
-        padding: 20px;
+    #hero-sm-screen{
+        display: none;
     }
-    #hero #hero-text-container{
-        position: relative;
-    }
-    #hero .hero-text{
-        position: absolute;
-        top: 15%;
-        left: 20%;
-    }
-    #hero .hero-text h1{
+    #hero-bg-screen h1, #hero-sm-screen h1{
         font-family: var(--font-family-three);
         color: var(--blue);
         font-weight: 900;
     }
-
+    #hero-bg-screen::before {    
+        content: "";
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+    }
+    #hero-bg-screen {
+        min-height: 550px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        position: relative;
+    } 
+    #hero-text-container{
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #hero-text-container .hero-image, .gallery-image{
+        max-width: 100%;
+        height: auto;
+    }
+    #hero-text-container h1{
+        color: var(--blue);
+        font-weight: 800;
+        font-size: 45px;
+        font-family: var(--font-family-three);
+    } 
 
     /* parallax */
     #parallax-sm-screen{
@@ -313,7 +288,7 @@ h2{
     }
     #parallax-bg-screen {
         background-image: url("/assets/img/gadgets2.jpg");
-        min-height: 560px;
+        min-height: 600px;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -323,73 +298,33 @@ h2{
     } 
     #parallax-inner-text{
         position: absolute;
-        top: 15%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     #parallax-inner-text h1{
         color: var(--white);
         font-weight: 800;
-        font-size: 60px;
+        font-size: 45px;
+        font-family: var(--font-family-three);
     } 
     #parallax-inner-text p{
-        color: white;
+        color: var(--white);
     } 
+    #parallax-inner-text .parallax-image{
+        max-width: 100%;
+        height: auto;
+    }
 
 
     /* gallery */
-    #gallery{
-        background: var(--orange-light);
+    .gallery-image img{
+        height: 600px;
+        width: 600px;
     }
-    .gallery-sm-screen {
-        display: none;
-    }
-    .gallery-bg-screen {
-        width: 100%;
-        height: 500px; 
-        background-size: cover;
-        background-image: url(/assets/img/collage.jpg);
-        position: relative;
-    }
-    .gallery-bg-screen:hover {
-        width: 100%;
-        height: 500px;
-        transition: 1s ease-in-out;
-        background-size: cover;
-        background-image: -moz-linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, rgba(0, 0, 0, 0.5) ), url(/assets/img/collage.jpg);
-        background-image: -webkit-linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, rgba(0, 0, 0, 0.5) ), url(/assets/img/collage.jpg);
-        filter : progid: DXImageTransform.Microsoft.gradient( startColorstr="#fffff", endColorstr="#FC5518", GradientType=1 );  
-        background-image: linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, rgba(0, 0, 0, 0.5) ), url(/assets/img/collage.jpg);
-        position: relative;
-    }
-    .gallery-bg-screen:hover .gallery-inner {
-        position: absolute;
-        transition: 1s ease;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); 
-        width: 20%;
-        text-align: center;
-        border-radius: 10px;
-    }
-    .gallery-bg-screen .gallery-inner h1{
-        display: none;
-    }
-    .gallery-bg-screen:hover .gallery-inner i{
-        font-size: 35px;
-        transition: 1s ease;
-    }
-    .gallery-bg-screen:hover .gallery-inner h1{
-        display: block;
-        transition: 1s ease;
-        font-family: var(--font-family-two);   
-        font-size: 50px;
-        color: var(--white);
-    }
-    .modal img{
-        height: 90vh;
-    }
-    .modal i{
-        color: var(--orange);
-        font-size: 40px;
+    .gallery-grid-images img{
+        height: 230px;
+        width: 230px;
     }
     .carousel-control-next-icon {
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fc5518' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
@@ -405,9 +340,6 @@ h2{
     }
     .carousel-comment h5{
         font-weight: 800;
-    }
-    .carousel-comment{
-        height: 45vh;
     }
     .testimonial-image i{
         font-size: 30px;
@@ -432,8 +364,6 @@ h2{
     color: var(--orange);
 }
 
-/* carousel */
-
 
 /* services */
 #services {
@@ -448,11 +378,11 @@ h2{
 }
 
 
-
-
 /* contact */
-#form, #map, #socials{
-    border: 4px solid var(--orange-light);
+#cont{
+    /* background: var(--orange-light); */
+}
+#form{
     font-family: var(--font-family-three);
     color: var(--orange);
 }
@@ -496,6 +426,16 @@ input:focus, input.form-control:focus {
 }
 
 
+/* quick links */
+#quick-links{
+    background: var(--orange-light);
+}
+#quick-links a{
+    text-decoration: none;
+    color: var(--orange);
+}
+
+
 /* footer */
 #footer img{
     height: 12vh;
@@ -505,23 +445,18 @@ input:focus, input.form-control:focus {
     background-color: var(--orange-light);
     padding: 5px;
     border-radius: 50%;
-    font-size: 15px;
+    font-size: 20px;
 }
 #footer p {
-    font-size: 13px;
+    font-size: 15px;
 }
 #footer a {
     text-decoration: none;
     color: var(--orange);
-    font-size: 13px;
+    font-size: 16px;
 }
 #footer #info a{
     color: var(--black);
-}
-#footer #links a{
-    color: var(--black);
-    font-weight: 400;
-    font-size: 15px;
 }
 #footer span {
     color: var(--orange);
@@ -531,6 +466,8 @@ input:focus, input.form-control:focus {
 #arrow i{
     font-size: 40px;
     color:  var(--orange);
+    background-color: white;
+    border-radius: 25%;
 }
 
 
