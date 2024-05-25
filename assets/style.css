@@ -4,13 +4,13 @@
 
 :root{
     --orange: #fc5518;
-    --orange-light: #ffede6;
+    /* --orange-light: #ffede6; */
+    --orange-light: #f8efeb;
     --orange-dark: #e64500;
     --blue: #173b5f;
     --white: #fff;
     --black: #000;
     --grey: #f5f3f3;
-    /* --font-family-one: 'Arimo', sans-serif; */
     --font-family-two: 'Playfair Display', serif; 
     --font-family-three: 'Merriweather', serif;   
 }
@@ -25,14 +25,23 @@ p, h5{
     font-family: var(--font-family-three);
     letter-spacing: 1px;
 }
-#headers2 h4{
-    font-family: var(--font-family-three);
+
+#headers h2{
+    font-family: var(--font-family-one);
     color: var(--blue);
+    font-size: 40px;
+    font-weight: 600;
 }
 
-h2{
-    font-family: var(--font-family-three);
+#h1header .h1headerLarge{
+    font-family: var(--font-family-one);
     color: var(--blue);
+    font-size: 35px !important;
+}
+#h1header .h1headerSmall{
+    font-family: var(--font-family-one);
+    color: var(--blue);
+    font-size: 20px;
 }
 
 #headers hr{
@@ -51,7 +60,47 @@ h2{
     color: var(--orange) !important;
 }
 
+@media only screen and (max-width: 345px) { 
+    #services .swapImg i{
+        font-size: 15px !important;
+        margin-top: 25px !important;
+        padding: 2px !important;
+    }
+    #services .swapImg img{
+        width: 50px !important;
+        height: 100px !important;
+    }
+    #services img{
+        width: 100px !important;
+        height: 250px !important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1000px) { 
+    #services .swapImg i{
+        font-size: 30px !important;
+        margin-top: 50px !important;
+        padding: 5px !important;
+    }
+    #services .swapImg img{
+        width: 80px !important;
+        height: 150px !important;
+    }
+    #services img{
+        width: 200px !important;
+        height: 250px !important;
+    }
+}
+
 @media only screen and (max-width: 768px) {
+
+    #navbar .nav-item a{
+        text-decoration: none;
+        font-family: var(--font-family-three);
+        color: var(--blue);
+        font-weight: 800;
+        font-size: 12px;
+    }
 
     /* banner */
     .banner-bg-screen{
@@ -62,7 +111,7 @@ h2{
     }
     .banner-sm-screen {
         width: 100%;
-        height: 500px;
+        height: 550px;
         background-size: cover;
         object-fit: contain;
         background-image: -moz-linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, rgba(0, 0, 0, 0.5) ), url(/assets/img/banner.jpg);
@@ -74,55 +123,51 @@ h2{
     .banner-sm-screen .banner-inner {
         position: absolute;
         top: 50%;
-        left: 45%;
+        left: 50%;
         transform: translate(-50%, -50%); 
-        width: 80%;
+        width: 90%;
         text-align: start;
     }
     .banner-sm-screen .banner-inner .span{
-        font-family: var(--font-family-one);
-        font-size: 25px;
-        font-weight: 100;
+        font-size: 18px;
+        font-weight: 400;
         color: #fff;
+        letter-spacing: 1px;
+        font-family: var(--font-family-one);
     }
     .banner-sm-screen .banner-inner h1{
-        font-size: 40px;
+        padding-top: 20px;
+        font-size: 25px;
         color: #fff;
         font-family: var(--font-family-one);
-        font-weight: 800;
-        padding-top: 20px;
-        line-height: 50px;
+        font-weight: 900;
+    }
+    .banner-sm-screen .banner-inner p{
+        font-family: var(--font-family-one);   
+        color: var(--orange);
+        font-size: 14px;
+        line-height: 18px;
     }
     .banner-sm-screen .banner-inner h4{
-        font-family: var(--font-family-two);    
+        font-family: var(--font-family-two);   
         font-size: 20px;
+        font-weight: 400;
         color: var(--orange);
-        padding-top: 10px;
     }
-
-
-    /* hero */
-    #hero-bg-screen{
-        display: none;
+    .banner-sm-screen .banner-inner .btn{
+        background-color: var(--orange);
+        border: 2px solid var(--orange);
+        font-size: 15px;
+        color: #fff;
     }
-    #hero-text-container .hero-image{
-        max-width: 100%;
-        height: auto;
-    }
-    #hero-text-container h1{
-        color: var(--blue);
-        font-weight: 800;
-        font-size: 40px;
-        font-family: var(--font-family-three);
-    } 
 
 
     /* parallax */
-    #parallax-bg-screen{
+    #parallaxSection{
         display: none;
     }
     #parallax-sm-screen {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/img/gadgets2.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/img//phoneswap.jpeg");
         height: fit-content;
         background-position: center;
         background-repeat: no-repeat;
@@ -136,10 +181,35 @@ h2{
     #parallax-sm h1{
         color: var(--white);
         font-size: 40px;
-        font-family: var(--font-family-three);
-        font-weight: 700;
+        font-family: var(--font-family-one);
+        font-weight: 600;
     } 
     #parallax-sm p{
+        color: var(--white);
+    } 
+    /* logistics */
+    #logisticsParallaxSection{
+        display: none;
+    }
+    #logistics-parallax-sm-screen {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/img/red_truck.webp");
+        height: fit-content;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    #logistics-parallax-sm-screen{
+        width: 100%;
+        height: fit-content;
+    }
+    #logistics-parallax-sm-screen h1{
+        color: var(--white);
+        font-size: 40px;
+        font-family: var(--font-family-one);
+        font-weight: 600;
+    } 
+    #logistics-parallax-sm-screen p{
         color: var(--white);
     } 
 
@@ -204,79 +274,54 @@ h2{
     .banner-bg-screen .banner-inner {
         position: absolute;
         top: 50%;
-        left: 50%;
+        left: 48%;
         transform: translate(-50%, -50%); 
         width: 90%;
         text-align: start;
     }
     .banner-bg-screen .banner-inner .span{
-        font-size: 45px;
+        font-size: 32px;
         font-weight: 100;
         color: #fff;
+        letter-spacing: 1px;
         font-family: var(--font-family-one);
     }
+
     .banner-bg-screen .banner-inner h1{
-        padding-top: 20px;
-        font-size: 50px;
+        padding-top: 10px;
+        font-size: 40px;
         color: #fff;
         font-family: var(--font-family-one);
-        font-weight: 900;
+        font-weight: 700;
     }
-    .banner-bg-screen .banner-inner h4{
-        font-family: var(--font-family-two);   
-        font-size: 30px;
+    .banner-bg-screen .banner-inner h5{
+        font-family: var(--font-family-one);   
         color: var(--orange);
     }
+    .banner-bg-screen .banner-inner h4{
+        font-family: var(--font-family-one);   
+        font-size: 28px;
+        font-weight: 700;
+        color: var(--orange);
+    }
+    .banner-bg-screen .banner-inner .btn{
+        background-color: var(--orange);
+        border: 2px solid var(--orange);
+        font-size: 18px;
+        color: #fff;
+    }
+
+    /* services */
+    #services .cardSection{
+        margin-top: 250px !important;
+    }
     
-    /* hero */
-    #hero-sm-screen{
-        display: none;
-    }
-    #hero-bg-screen h1, #hero-sm-screen h1{
-        font-family: var(--font-family-three);
-        color: var(--blue);
-        font-weight: 900;
-    }
-    #hero-bg-screen::before {    
-        content: "";
-        background-size: cover;
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        left: 0px;
-    }
-    #hero-bg-screen {
-        min-height: 550px;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
-        position: relative;
-    } 
-    #hero-text-container{
-        position: absolute;
-        top: 45%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    #hero-text-container .hero-image, .gallery-image{
-        max-width: 100%;
-        height: auto;
-    }
-    #hero-text-container h1{
-        color: var(--blue);
-        font-weight: 800;
-        font-size: 45px;
-        font-family: var(--font-family-three);
-    } 
 
     /* parallax */
     #parallax-sm-screen{
         display: none;
     }
-    #parallax-bg-screen::before {    
+    #parallaxSection::before {    
         content: "";
         background-size: cover;
         position: absolute;
@@ -286,9 +331,9 @@ h2{
         left: 0px;
         background-color: rgba(0,0,0,0.70);
     }
-    #parallax-bg-screen {
-        background-image: url("/assets/img/gadgets2.jpg");
-        min-height: 600px;
+    #parallaxSection {
+        background-image: url("/assets/img/phoneswap.jpeg");
+        min-height: 500px;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -296,25 +341,78 @@ h2{
         width: 100%;
         position: relative;
     } 
-    #parallax-inner-text{
+    #parallaxSection .wrapperText{
         position: absolute;
-        top: 50%;
+        top: 35%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -35%);
+        width: 90%;
     }
-    #parallax-inner-text h1{
-        color: var(--white);
-        font-weight: 800;
-        font-size: 45px;
-        font-family: var(--font-family-three);
-    } 
-    #parallax-inner-text p{
-        color: var(--white);
-    } 
-    #parallax-inner-text .parallax-image{
-        max-width: 100%;
-        height: auto;
+    #parallaxSection .wrapperText img{
+        width: 250px;
+        height: 250px;
+        float: left;
+        margin: 10px;
     }
+    #parallaxSection .wrapperText h1{
+        color: var(--white);
+        font-weight: 600;
+        font-size: 40px;
+        font-family: var(--font-family-one);
+    } 
+    #parallaxSection p{
+        color: var(--white);
+        margin-top: 15px;
+    } 
+
+
+    /* logistics parallax */
+    #logistics-parallax-sm-screen{
+        display: none;
+    }
+    #logisticsParallaxSection::before {    
+        content: "";
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-color: rgba(0,0,0,0.70);
+    }
+    #logisticsParallaxSection {
+        background-image: url("/assets/img/red_truck.webp");
+        min-height: 400px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        position: relative;
+    } 
+    #logisticsParallaxSection .wrapperText{
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -35%);
+        width: 90%;
+    }
+    #logisticsParallaxSection .wrapperText img{
+        width: 200px;
+        height: 200px;
+        float: left;
+        margin: 10px;
+    }
+    #logisticsParallaxSection .wrapperText h1{
+        color: var(--white);
+        font-weight: 600;
+        font-size: 40px;
+        font-family: var(--font-family-one);
+    } 
+    #logisticsParallaxSection p{
+        color: var(--white);
+        margin-top: 15px;
+    } 
 
 
     /* gallery */
@@ -363,7 +461,19 @@ h2{
     text-decoration: none;
     color: var(--orange);
 }
+#navbar .dropdown a:hover{
+    text-decoration: none;
+    color: var(--orange);
+    background-color: white;
+}
 
+/* about */
+#about .wrapperText img {
+    width: 360px;
+    height: 300px;
+    float: left;
+    margin: 5px;
+}
 
 /* services */
 #services {
@@ -376,15 +486,34 @@ h2{
     font-size: 45px;
     color: var(--orange);
 }
+#services .swapImg i{
+    font-size: 70px;
+    margin-top: 70px;
+    padding: 15px;
+}
+#services .swapImg img{
+    width: 100px;
+    height: 250px;
+}
+#services img{
+    width: 250px;
+    height: 250px;
+}
+
+
+/* hero section */
+#hero .hero-image img {
+    width: 350px;
+    height: 240px;
+    float: right;
+}
 
 
 /* contact */
-#cont{
-    /* background: var(--orange-light); */
-}
 #form{
     font-family: var(--font-family-three);
     color: var(--orange);
+    letter-spacing: 1px;
 }
 input:focus, input.form-control:focus {
     outline: none !important;
@@ -413,9 +542,11 @@ input:focus, input.form-control:focus {
 .btn{
     background: var(--orange-light);
     border: none;
+    border-radius: 0px;
     color: var(--orange);
     font-weight: 600;
     margin: 3px;
+    letter-spacing: 1px;
 }
 .btn:hover{
     background: var(--orange-dark);
@@ -432,7 +563,8 @@ input:focus, input.form-control:focus {
 }
 #quick-links a{
     text-decoration: none;
-    color: var(--orange);
+    color: var(--orange);    
+    letter-spacing: 1px;
 }
 
 
@@ -447,13 +579,32 @@ input:focus, input.form-control:focus {
     border-radius: 50%;
     font-size: 20px;
 }
+#footer h5 {
+    color: var(--black);
+    font-size: 20px;
+}
 #footer p {
     font-size: 15px;
+}
+#footer .quickLinks ul li {
+    padding-bottom: 5px;
+}
+#footer .quickLinks ul {
+    list-style: none;
+    padding: 0px;
+    letter-spacing: 1px;
+}
+#footer .quickLinks a {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 16px;
+    letter-spacing: 1px;
 }
 #footer a {
     text-decoration: none;
     color: var(--orange);
     font-size: 16px;
+    letter-spacing: 1px;
 }
 #footer #info a{
     color: var(--black);
@@ -467,7 +618,6 @@ input:focus, input.form-control:focus {
     font-size: 40px;
     color:  var(--orange);
     background-color: white;
-    border-radius: 25%;
 }
 
 
