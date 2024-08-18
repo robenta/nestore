@@ -111,12 +111,8 @@
         font-weight: 400;
         color: var(--orange);
     }
-    .banner-sm-screen .banner-inner .btn{
-        background-color: var(--orange);
-        border: 2px solid var(--orange);
-        font-size: 15px;
-        color: #fff;
-    }
+
+
 
 
     /* parallax */
@@ -172,20 +168,6 @@
     } 
 
 
-    /* gallery */
-    .gallery-bg-screen {
-        display: none;
-    }
-    .gallery-image img{
-        height: 600px;
-        width: 500px;
-    }
-    .gallery-grid-images img{
-        height: 150px;
-        width: 200px;
-    }  
-
-
     /* testimonial */
     .carousel-comment {
         height: 500px;
@@ -219,7 +201,7 @@
 } 
 
 @media only screen and (min-width: 768px) {
-
+    
     /* banner */
     .banner-bg-screen{
         display: block;
@@ -229,6 +211,7 @@
     }
     .banner-bg-screen {
         width: 100%;
+        height: 550px;
         background-size: cover;
         background-image: -moz-linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, rgba(0, 0, 0, 0.5) ), url(/assets/img/banner.jpg);
         background-image: -webkit-linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, rgba(0, 0, 0, 0.5) ), url(/assets/img/banner.jpg);
@@ -589,6 +572,41 @@ p, h5{
     float: right;
 }
 
+/* gallery */
+
+.marquee {
+    width: 100%;
+    overflow: hidden; 
+    white-space: nowrap; 
+}
+  
+.marquee-content {
+    display: inline-flex; 
+    animation: marquee 15s linear infinite;
+}
+  
+.marquee-content img {
+    width: 200px; 
+    margin-right: 10px;
+}
+  
+@keyframes marquee {
+    0% {
+      transform: translateX(0%); 
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+}
+  
+.modal .modal-header img{
+    height: 70px;
+    width: 100px;
+}
+.modal .modal-body img{
+    height: 600px;
+    width: 800px;
+}
 
 /* contact */
 #form{
@@ -709,37 +727,3 @@ iframe {
 
 
 
-
-.marquee {
-    width: 100%;
-    overflow: hidden; 
-    white-space: nowrap; 
-}
-  
-.marquee-content {
-    display: inline-flex; 
-    animation: marquee 15s linear infinite;
-}
-  
-.marquee-content img {
-    width: 200px; 
-    margin-right: 10px;
-}
-  
-@keyframes marquee {
-    0% {
-      transform: translateX(0%); 
-    }
-    100% {
-      transform: translateX(-50%);
-    }
-}
-  
-.modal .modal-header img{
-    height: 70px;
-    width: 100px;
-}
-.modal .modal-body img{
-    height: 600px;
-    width: 800px;
-}
