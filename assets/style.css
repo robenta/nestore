@@ -58,7 +58,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-
     #navbar .nav-item a{
         text-decoration: none;
         font-family: var(--font-family-three);
@@ -71,12 +70,10 @@
     .banner-bg-screen{
         display: none;
     }
-    .banner-sm-screen{
-        display: block;
-    }
     .banner-sm-screen {
+        display: block;
         width: 100%;
-        height: 550px;
+        height: 100vh;
         background-size: cover;
         object-fit: contain;
         background-image: -moz-linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, rgba(0, 0, 0, 0.5) ), url(/assets/img/banner.jpg);
@@ -87,33 +84,29 @@
     }
     .banner-sm-screen .banner-inner {
         position: absolute;
-        top: 50%;
+        top: 45%;
         left: 50%;
         transform: translate(-50%, -50%); 
         width: 90%;
         text-align: start;
     }
     .banner-sm-screen .banner-inner .span{
-        font-size: 18px;
-        font-weight: 400;
+        font-size: 1.3rem;
+        font-weight: 300;
         color: #fff;
         letter-spacing: 0.5px;
         font-family: var(--font-family-one);
     }
     .banner-sm-screen .banner-inner h1{
-        padding-top: 20px;
-        font-size: 25px;
+        padding-top: 10px;
+        font-size: 1.3rem;
         color: #fff;
         font-family: var(--font-family-one);
         font-weight: 900;
     }
-    .banner-sm-screen .banner-inner p{
-        font-family: var(--font-family-one);   
-        color: var(--orange);
-    }
     .banner-sm-screen .banner-inner h4{
         font-family: var(--font-family-one);   
-        font-size: 23px;
+        font-size: 1rem;
         font-weight: 700;
         color: var(--orange);
     }
@@ -122,6 +115,13 @@
 
 
     /* parallax */
+    #parallax-sm h2{
+        color: var(--white);
+        font-size: 1.5rem;
+        font-family: var(--font-family-one);
+        font-weight: 600;
+    }
+
     #parallaxSection{
         display: none;
     }
@@ -137,12 +137,6 @@
         width: 100%;
         height: max-content;
     }
-    #parallax-sm h1{
-        color: var(--white);
-        font-size: 2.5rem;
-        font-family: var(--font-family-one);
-        font-weight: 600;
-    } 
     #parallax-sm p{
         color: var(--white);
     } 
@@ -163,12 +157,6 @@
         width: 100%;
         height: fit-content;
     }
-    #logistics-parallax-sm-screen h1{
-        color: var(--white);
-        font-size: 2.5rem;
-        font-family: var(--font-family-one);
-        font-weight: 600;
-    } 
     #logistics-parallax-sm-screen p{
         color: var(--white);
     } 
@@ -216,6 +204,7 @@
 }
 
 @media only screen and (min-width: 768px) {
+    /* navbar */
     #navbar .nav-item a{
         text-decoration: none;
         font-family: var(--font-family-three);
@@ -226,13 +215,11 @@
 
 
     /* banner */
-    .banner-bg-screen{
-        display: block;
-    }
     .banner-sm-screen{
         display: none;
     }
     .banner-bg-screen {
+        display: block;
         width: 100%;
         height: 500px;
         background-size: cover;
@@ -244,7 +231,7 @@
     } 
     .banner-bg-screen .banner-inner {
         position: absolute;
-        top: 40%;
+        top: 50%;
         left: 48%;
         transform: translate(-50%, -50%); 
         width: 90%;
@@ -252,12 +239,11 @@
     }
     .banner-bg-screen .banner-inner .span{
         font-size: 1.70rem;
-        font-weight: 100;
+        font-weight: 300;
         color: #fff;
         letter-spacing: 0.5px;
         font-family: var(--font-family-one);
     }
-
     .banner-bg-screen .banner-inner h1{
         padding-top: 10px;
         font-size: 2rem;
@@ -284,14 +270,14 @@
     
     /* services */
     #services .card{
-        height: 500px;
+        height: 400px;
     }
 
     /* parallax */
     #parallaxSection #headers h2{
         font-family: var(--font-family-one);
-        color: var(--white) !important;
-        font-size: 2rem;
+        color: var(--white);
+        font-size: 1.5rem;
         font-weight: 600;
     }
     #parallaxSection #headers hr{
@@ -425,13 +411,14 @@
     }  
     .carousel-indicators [data-bs-target] {
         border-radius: 50%;
-        width: 15px;
-        height: 15px;
+        width: 13px;
+        height: 13px;
     }
     .carousel-dark .carousel-indicators [data-bs-target], .carousel-indicators [data-bs-target] {
         background-color: var(--orange-dark);
     }
 }
+
 
 *{
     box-sizing: border-box;
@@ -458,7 +445,7 @@ h5{
 #headers h2{
     font-family: var(--font-family-one);
     color: var(--blue);
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 600;
 }
 
@@ -581,7 +568,7 @@ h5{
 /* about */
 #about .wrapperText img {
     width: 360px;
-    height: 330px;
+    height: 300px;
     float: left;
 }
 
@@ -612,7 +599,7 @@ h5{
 /* hero section */
 #authenticity .authenticity-image img {
     width: 360px;
-    height: 300px;
+    height: 270px;
     float: right;
 }
 
