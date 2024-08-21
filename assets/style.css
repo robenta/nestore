@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@600;200;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
 
 :root{
     --orange: #fc5518;
-    /* --orange-light: #ffede6; */
     --orange-light: #f8efeb;
     --orange-dark: #e64500;
     --blue: #173b5f;
@@ -12,6 +10,7 @@
     --black: #000;
     --grey: #f5f3f3;
     --dark-grey: rgb(186, 184, 184);
+    --font-family-one: "Noto Sans", sans-serif; 
     --font-family-two: 'Playfair Display', serif; 
     --font-family-three: 'Merriweather', serif;   
 }
@@ -19,7 +18,7 @@
 
 @media only screen and (max-width: 345px) { 
     #services .swapImg i{
-        font-size: 15px !important;
+        font-size: 1rem !important;
         margin-top: 25px !important;
         padding: 2px !important;
     }
@@ -33,19 +32,28 @@
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1000px) { 
+@media only screen and (min-width: 992px) and (max-width: 1470px) { 
+    #services .card{
+        height: 660px !important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
     #services .swapImg i{
-        font-size: 30px !important;
-        margin-top: 50px !important;
+        font-size: 2rem !important;
+        margin-top: 100px !important;
         padding: 5px !important;
     }
     #services .swapImg img{
         width: 80px !important;
-        height: 150px !important;
+        height: 250px !important;
     }
     #services img{
         width: 200px !important;
         height: 250px !important;
+    }
+    #services .card{
+        height: 500px !important;
     }
 }
 
@@ -56,7 +64,7 @@
         font-family: var(--font-family-three);
         color: var(--blue);
         font-weight: 800;
-        font-size: 12px;
+        font-size: 1rem;
     }
 
     /* banner */
@@ -89,7 +97,7 @@
         font-size: 18px;
         font-weight: 400;
         color: #fff;
-        letter-spacing: 1px;
+        letter-spacing: 0.5px;
         font-family: var(--font-family-one);
     }
     .banner-sm-screen .banner-inner h1{
@@ -102,13 +110,11 @@
     .banner-sm-screen .banner-inner p{
         font-family: var(--font-family-one);   
         color: var(--orange);
-        font-size: 14px;
-        line-height: 18px;
     }
     .banner-sm-screen .banner-inner h4{
-        font-family: var(--font-family-two);   
-        font-size: 20px;
-        font-weight: 400;
+        font-family: var(--font-family-one);   
+        font-size: 23px;
+        font-weight: 700;
         color: var(--orange);
     }
 
@@ -133,7 +139,7 @@
     }
     #parallax-sm h1{
         color: var(--white);
-        font-size: 40px;
+        font-size: 2.5rem;
         font-family: var(--font-family-one);
         font-weight: 600;
     } 
@@ -159,7 +165,7 @@
     }
     #logistics-parallax-sm-screen h1{
         color: var(--white);
-        font-size: 40px;
+        font-size: 2.5rem;
         font-family: var(--font-family-one);
         font-weight: 600;
     } 
@@ -200,8 +206,25 @@
     }
 } 
 
+@media only screen and (min-width: 768px) and (max-width: 1201px) {
+    #parallaxSection {
+        height: 130vh !important; 
+    } 
+    #logisticsParallaxSection {
+        height: 130vh !important; 
+    } 
+}
+
 @media only screen and (min-width: 768px) {
-    
+    #navbar .nav-item a{
+        text-decoration: none;
+        font-family: var(--font-family-three);
+        color: var(--blue);
+        font-weight: 800;
+        font-size: 1rem;
+    }
+
+
     /* banner */
     .banner-bg-screen{
         display: block;
@@ -211,7 +234,7 @@
     }
     .banner-bg-screen {
         width: 100%;
-        height: 550px;
+        height: 500px;
         background-size: cover;
         background-image: -moz-linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, rgba(0, 0, 0, 0.5) ), url(/assets/img/banner.jpg);
         background-image: -webkit-linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, rgba(0, 0, 0, 0.5) ), url(/assets/img/banner.jpg);
@@ -221,46 +244,64 @@
     } 
     .banner-bg-screen .banner-inner {
         position: absolute;
-        top: 50%;
+        top: 40%;
         left: 48%;
         transform: translate(-50%, -50%); 
         width: 90%;
         text-align: start;
     }
     .banner-bg-screen .banner-inner .span{
-        font-size: 32px;
+        font-size: 1.70rem;
         font-weight: 100;
         color: #fff;
-        letter-spacing: 1px;
+        letter-spacing: 0.5px;
         font-family: var(--font-family-one);
     }
 
     .banner-bg-screen .banner-inner h1{
         padding-top: 10px;
-        font-size: 40px;
+        font-size: 2rem;
         color: #fff;
         font-family: var(--font-family-one);
         font-weight: 700;
     }
-    .banner-bg-screen .banner-inner h5{
+    .banner-bg-screen .banner-inner p{
         font-family: var(--font-family-one);   
         color: var(--orange);
     }
     .banner-bg-screen .banner-inner h4{
         font-family: var(--font-family-one);   
-        font-size: 28px;
+        font-size: 1.44rem;
         font-weight: 700;
         color: var(--orange);
     }
     .banner-bg-screen .banner-inner .btn{
         background-color: var(--orange);
         border: 2px solid var(--orange);
-        font-size: 18px;
+        font-size: 1rem;
         color: #fff;
     }
     
+    /* services */
+    #services .card{
+        height: 500px;
+    }
 
     /* parallax */
+    #parallaxSection #headers h2{
+        font-family: var(--font-family-one);
+        color: var(--white) !important;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    #parallaxSection #headers hr{
+        width: 80px;
+        height: 2px;
+        background-color: var(--orange-dark);
+        border: 0;
+        margin: auto;
+    }
+
     #parallax-sm-screen{
         display: none;
     }
@@ -276,33 +317,29 @@
     }
     #parallaxSection {
         background-image: url("/assets/img/phoneswap.jpeg");
-        min-height: 700px;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
         position: relative;
+        min-height: fit-content;
+        height: 100vh; 
     } 
     #parallaxSection .wrapperText{
         position: absolute;
-        top: 40%;
+        top: 35%;
         left: 50%;
         transform: translate(-50%, -35%);
         width: 97%;
+        height: fit-content;
     }
     #parallaxSection .wrapperText img{
         width: 350px;
-        height: 350px;
+        height: 320px;
         float: left;
         margin: 10px;
     }
-    #parallaxSection .wrapperText h1{
-        color: var(--white);
-        font-weight: 600;
-        font-size: 40px;
-        font-family: var(--font-family-one);
-    } 
     #parallaxSection p{
         color: var(--white);
         margin-top: 15px;
@@ -325,33 +362,28 @@
     }
     #logisticsParallaxSection {
         background-image: url("/assets/img/red_truck.webp");
-        min-height: 700px;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
         position: relative;
+        height: 100vh; 
     } 
     #logisticsParallaxSection .wrapperText{
         position: absolute;
-        top: 40%;
+        top: 35%;
         left: 50%;
         transform: translate(-50%, -35%);
+        height: fit-content;
         width: 97%;
     }
     #logisticsParallaxSection .wrapperText img{
         width: 350px;
-        height: 300px;
+        height: 260px;
         float: left;
         margin: 10px;
     }
-    #logisticsParallaxSection .wrapperText h1{
-        color: var(--white);
-        font-weight: 600;
-        font-size: 40px;
-        font-family: var(--font-family-one);
-    } 
     #logisticsParallaxSection p{
         color: var(--white);
         margin-top: 15px;
@@ -378,7 +410,7 @@
         margin: 50px;
     }
     .testimonial-image i{
-        font-size: 30px;
+        font-size: 2rem;
         color: var(--orange);
         border: 1px solid var(--orange);
         border-radius: 50%;
@@ -405,29 +437,29 @@
     box-sizing: border-box;
 }
 
-p, h5{
-    font-size: 20px;
-    line-height: 32px;
+html{
+    scroll-behavior: smooth;
+}
+
+p{
+    font-size: 1rem;
+    line-height: 1.5;
     font-family: var(--font-family-three);
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
+}
+
+h5{
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: var(--font-family-three);
+    letter-spacing: 0.5px;
 }
 
 #headers h2{
     font-family: var(--font-family-one);
     color: var(--blue);
-    font-size: 40px;
+    font-size: 2rem;
     font-weight: 600;
-}
-
-#h1header .h1headerLarge{
-    font-family: var(--font-family-one);
-    color: var(--blue);
-    font-size: 30px !important;
-}
-#h1header .h1headerSmall{
-    font-family: var(--font-family-one);
-    color: var(--blue);
-    font-size: 25px;
 }
 
 #headers hr{
@@ -444,9 +476,12 @@ p, h5{
     border: none;
     border-radius: 0px;
     color: var(--white);
+    font-size: 1rem;
+    line-height: 1.5;
     font-weight: 600;
     margin: 3px;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
+    font-family: var(--font-family-one);
 }
 #bannerBtn .btn:hover{
     background: var(--white);
@@ -460,8 +495,11 @@ p, h5{
     border-radius: 2px;
     color: var(--white);
     padding: 6px;
+    font-size: 1rem;
+    line-height: 1.5;
     font-weight: 600;
     border: 2px solid var(--orange-dark);
+    font-family: var(--font-family-one);
 }
 #contentButton .btn:hover{
     background: var(--white);
@@ -478,7 +516,10 @@ p, h5{
     color: var(--white);
     padding: 6px;
     font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.5;
     border: 2px solid var(--orange-dark);
+    font-family: var(--font-family-one);
 }
 #galleryButton .btn:hover{
     background: var(--white);
@@ -493,15 +534,18 @@ p, h5{
     background: var(--orange-dark);
     border-radius: 2px;
     color: var(--white);
-    padding: 6px;
+    padding: 4px;
     font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.5;
     border: 2px solid var(--orange-dark);
+    font-family: var(--font-family-one);
 }
 #formButton .btn:hover{
     background: var(--white);
     border-radius: 2px;
     color: var(--blue);
-    padding: 6px;
+    padding: 4px;
     font-weight: 600;
     border: 2px solid var(--blue);
 }
@@ -517,6 +561,9 @@ p, h5{
 #navbar .nav-item a{
     text-decoration: none;
     font-family: var(--font-family-three);
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
     color: var(--blue);
     font-weight: 800;
 }
@@ -546,21 +593,18 @@ p, h5{
 #services h5{
     color: var(--orange);
 }
-#services i{
-    font-size: 45px;
-    color: var(--orange);
-}
 #services .swapImg i{
-    font-size: 40px;
+    color: var(--orange);
+    font-size: 2.5rem;
     margin-top: 80px;
     padding: 15px;
 }
 #services .swapImg img{
-    width: 100px;
+    width: 80px;
     height: 250px;
 }
 #services img{
-    width: 300px;
+    width: 230px;
     height: 250px;
 }
 
@@ -572,24 +616,24 @@ p, h5{
     float: right;
 }
 
-/* gallery */
 
+/* gallery */
+#gallery{
+    background-color: var(--orange-light);
+}
 .marquee {
     width: 100%;
     overflow: hidden; 
     white-space: nowrap; 
 }
-  
 .marquee-content {
     display: inline-flex; 
-    animation: marquee 15s linear infinite;
-}
-  
+    animation: marquee 20s linear infinite;
+} 
 .marquee-content img {
-    width: 200px; 
+    width: 150px; 
     margin-right: 10px;
 }
-  
 @keyframes marquee {
     0% {
       transform: translateX(0%); 
@@ -597,22 +641,30 @@ p, h5{
     100% {
       transform: translateX(-50%);
     }
-}
-  
+} 
 .modal .modal-header img{
     height: 70px;
     width: 100px;
 }
-.modal .modal-body img{
-    height: 600px;
-    width: 800px;
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
 }
+.modal-body img {
+    max-width: 100%;
+    max-height: 90%;
+}
+
 
 /* contact */
 #form{
     font-family: var(--font-family-three);
+    font-size: 1rem;
     color: var(--orange);
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
 }
 input:focus, input.form-control:focus {
     outline: none !important;
@@ -631,15 +683,9 @@ input:focus, input.form-control:focus {
     border: 1px solid var(--grey);
 
 }
-#socials a{
-    color: var(--orange);
-    background-color: var(--orange-light);
-    padding: 8px;
-    border-radius: 50%;
-    font-size: 20px;
-}
 
-/* iframe */
+
+/* location */
 iframe {
     height: 500px; 
 }
@@ -651,28 +697,29 @@ iframe {
 }
 #quick-links a{
     text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.5;
     color: var(--orange);    
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
+    font-family: var(--font-family-one);
 }
 
 
 /* footer */
 #footer img{
-    height: 12vh;
+    height: 120px;
+    width: 120px;
 }
 #footer i {
     color: var(--orange);
     background-color: var(--orange-light);
     padding: 5px;
     border-radius: 50%;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
-#footer h5 {
-    color: var(--black);
-    font-size: 20px;
-}
-#footer p {
-    font-size: 15px;
+#footer h5{
+    color: var(--blue);
+    font-size: 1.2rem;
 }
 #footer .quickLinks ul li {
     padding-bottom: 5px;
@@ -680,30 +727,23 @@ iframe {
 #footer .quickLinks ul {
     list-style: none;
     padding: 0px;
-    letter-spacing: 1px;
 }
-#footer .quickLinks a {
+#footer .quickLinks a,
+#footer a  {
     text-decoration: none;
     color: var(--black);
-    font-size: 16px;
-    letter-spacing: 1px;
-}
-#footer a {
-    text-decoration: none;
-    color: var(--orange);
-    font-size: 16px;
-    letter-spacing: 1px;
-}
-#footer #info a{
-    color: var(--black);
+    font-size: 1rem;
+    font-family: var(--font-family-three);
+    letter-spacing: 0.5px;
 }
 #footer span {
     color: var(--orange);
 }
 
+
 /* fixed arrow */
 #arrow i{
-    font-size: 40px;
+    font-size: 2.5rem;
     color:  var(--orange);
     background-color: white;
 }
