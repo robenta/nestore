@@ -5,13 +5,12 @@
     --orange: #fc5518;
     --orange-light: #f8efeb;
     --orange-dark: #e64500;
-    --blue: #173b5f;
+    --blue: #153a60;
     --white: #fff;
     --black: #000;
     --grey: #f5f3f3;
     --dark-grey: rgb(186, 184, 184);
     --font-family-one: "Noto Sans", sans-serif; 
-    --font-family-two: 'Playfair Display', serif; 
     --font-family-three: 'Merriweather', serif;   
 }
 
@@ -60,7 +59,7 @@
 @media only screen and (max-width: 768px) {
     #navbar .nav-item a{
         text-decoration: none;
-        font-family: var(--font-family-three);
+        font-family: var(--font-family-two);
         color: var(--blue);
         font-weight: 800;
         font-size: 1rem;
@@ -73,7 +72,7 @@
     .banner-sm-screen {
         display: block;
         width: 100%;
-        height: 100vh;
+        height: 400px;
         background-size: cover;
         object-fit: contain;
         background-image: -moz-linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, rgba(0, 0, 0, 0.5) ), url(/assets/img/banner.jpg);
@@ -186,8 +185,8 @@
     }
     .carousel-indicators [data-bs-target] {
         border-radius: 50%;
-        width: 15px;
-        height: 15px;
+        width: 12px;
+        height: 12px;
     }
     .carousel-dark .carousel-indicators [data-bs-target], .carousel-indicators [data-bs-target] {
         background-color: var(--orange-dark);
@@ -207,12 +206,11 @@
     /* navbar */
     #navbar .nav-item a{
         text-decoration: none;
-        font-family: var(--font-family-three);
+        font-family: var(--font-family-two);
         color: var(--blue);
         font-weight: 800;
         font-size: 1rem;
     }
-
 
     /* banner */
     .banner-sm-screen{
@@ -270,7 +268,8 @@
     
     /* services */
     #services .card{
-        height: 400px;
+        height: 28rem;
+        color: green;
     }
 
     /* parallax */
@@ -431,14 +430,14 @@ html{
 p{
     font-size: 1rem;
     line-height: 1.5;
-    font-family: var(--font-family-three);
+    font-family: var(--font-family-two);
     letter-spacing: 0.5px;
 }
 
 h5{
     font-size: 1rem;
     line-height: 1.5;
-    font-family: var(--font-family-three);
+    font-family: var(--font-family-two);
     letter-spacing: 0.5px;
 }
 
@@ -547,7 +546,7 @@ h5{
 }
 #navbar .nav-item a{
     text-decoration: none;
-    font-family: var(--font-family-three);
+    font-family: var(--font-family-two);
     font-size: 1rem;
     letter-spacing: 0.5px;
     line-height: 1.5;
@@ -648,7 +647,7 @@ h5{
 
 /* contact */
 #form{
-    font-family: var(--font-family-three);
+    font-family: var(--font-family-two);
     font-size: 1rem;
     color: var(--orange);
     letter-spacing: 0.5px;
@@ -686,9 +685,12 @@ iframe {
     text-decoration: none;
     font-size: 1rem;
     line-height: 1.5;
-    color: var(--orange);    
+    color: var(--orange-dark);    
     letter-spacing: 0.5px;
     font-family: var(--font-family-one);
+}
+#quick-links a:hover{
+    text-decoration: 1px solid var(--orange-dark) underline;
 }
 
 
@@ -720,7 +722,7 @@ iframe {
     text-decoration: none;
     color: var(--black);
     font-size: 1rem;
-    font-family: var(--font-family-three);
+    font-family: var(--font-family-two);
     letter-spacing: 0.5px;
 }
 #footer span {
