@@ -268,8 +268,8 @@
     
     /* services */
     #services .card{
-        height: 28rem;
-        color: green;
+        height: 25rem;
+        color: pink;
     }
 
     /* parallax */
@@ -540,7 +540,7 @@ h5{
 /* navbar */
 .navbar-toggler{
     border: none !important;
-    font-size: 45px;
+    font-size: 2rem;
     box-shadow: none !important;
     color: var(--orange) !important;
 }
