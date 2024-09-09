@@ -33,239 +33,8 @@
 
 @media only screen and (min-width: 992px){ 
     #services .card{
-        height: 480px !important;
+        height: 550px !important;
     }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) { 
-    #services .swapImg i{
-        font-size: 2rem !important;
-        margin-top: 100px !important;
-        padding: 5px !important;
-    }
-    #services .swapImg img{
-        width: 80px !important;
-        height: 250px !important;
-    }
-    #services img{
-        width: 200px !important;
-        height: 250px !important;
-    }
-    #services .card{
-        height: 500px !important;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    #navbar .nav-item a{
-        text-decoration: none;
-        font-family: var(--font-family-two);
-        color: var(--blue);
-        font-weight: 800;
-        font-size: 1rem;
-    }
-
-    /* banner */
-    .banner-bg-screen{
-        display: none;
-    }
-    .banner-sm-screen {
-        display: block;
-        width: 100%;
-        height: 400px;
-        background-size: cover;
-        object-fit: contain;
-        background-image: -moz-linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, rgba(0, 0, 0, 0.5) ), url(/assets/img/banner.jpg);
-        background-image: -webkit-linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, rgba(0, 0, 0, 0.5) ), url(/assets/img/banner.jpg);
-        filter : progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#FC5518", GradientType=1 );  
-        background-image: linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, rgba(0, 0, 0, 0.5) ), url(/assets/img/banner.jpg);
-        position: relative;
-    }
-    .banner-sm-screen .banner-inner {
-        position: absolute;
-        top: 45%;
-        left: 50%;
-        transform: translate(-50%, -50%); 
-        width: 90%;
-        text-align: start;
-    }
-    .banner-sm-screen .banner-inner .span{
-        font-size: 1.3rem;
-        font-weight: 300;
-        color: #fff;
-        letter-spacing: 0.5px;
-        font-family: var(--font-family-one);
-    }
-    .banner-sm-screen .banner-inner h1{
-        padding-top: 10px;
-        font-size: 1.3rem;
-        color: #fff;
-        font-family: var(--font-family-one);
-        font-weight: 900;
-    }
-    .banner-sm-screen .banner-inner h4{
-        font-family: var(--font-family-one);   
-        font-size: 1rem;
-        font-weight: 700;
-        color: var(--orange);
-    }
-
-
-
-
-    /* parallax */
-    #parallax-sm h2{
-        color: var(--white);
-        font-size: 1.5rem;
-        font-family: var(--font-family-one);
-        font-weight: 600;
-    }
-
-    #parallaxSection{
-        display: none;
-    }
-    #parallax-sm-screen {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/img//phoneswap.jpeg");
-        height: fit-content;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-    }
-    #parallax-sm{
-        width: 100%;
-        height: max-content;
-    }
-    #parallax-sm p{
-        color: var(--white);
-    } 
-
-    /* logistics */
-    #logisticsParallaxSection{
-        display: none;
-    }
-    #logistics-parallax-sm-screen {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/img/red_truck.webp");
-        height: fit-content;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-    }
-    #logistics-parallax-sm-screen{
-        width: 100%;
-        height: fit-content;
-    }
-    #logistics-parallax-sm-screen p{
-        color: var(--white);
-    } 
-
-
-    /* testimonial */
-    .carousel-comment {
-        height: 500px;
-        overflow: hidden; 
-    }
-    .carousel-comment h5{
-        font-weight: 800;
-    }
-    .testimonial-image i{
-        font-size: 30px;
-        color: var(--orange);
-        border: 1px solid var(--orange);
-        border-radius: 50%;
-        padding: 10px;
-        background-color: var(--white);
-    }
-    .carousel-control-next-icon {
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fc5518' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
-    }  
-    .carousel-control-prev-icon {
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fc5518' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
-    }
-    .carousel-indicators [data-bs-target] {
-        border-radius: 50%;
-        width: 12px;
-        height: 12px;
-    }
-    .carousel-dark .carousel-indicators [data-bs-target], .carousel-indicators [data-bs-target] {
-        background-color: var(--orange-dark);
-    }
-} 
-
-@media only screen and (min-width: 768px) and (max-width: 1201px) {
-    #parallaxSection {
-        height: 130vh !important; 
-    } 
-    #logisticsParallaxSection {
-        height: 130vh !important; 
-    } 
-}
-
-@media only screen and (min-width: 768px) {
-    /* navbar */
-    #navbar .nav-item a{
-        text-decoration: none;
-        font-family: var(--font-family-two);
-        color: var(--blue);
-        font-weight: 800;
-        font-size: 1rem;
-    }
-
-    /* banner */
-    .banner-sm-screen{
-        display: none;
-    }
-    .banner-bg-screen {
-        display: block;
-        width: 100%;
-        height: 500px;
-        background-size: cover;
-        background-image: -moz-linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, rgba(0, 0, 0, 0.5) ), url(/assets/img/banner.jpg);
-        background-image: -webkit-linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, rgba(0, 0, 0, 0.5) ), url(/assets/img/banner.jpg);
-        filter : progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#FC5518", GradientType=1 );  
-        background-image: linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, rgba(0, 0, 0, 0.5) ), url(/assets/img/banner.jpg);
-        position: relative;
-    } 
-    .banner-bg-screen .banner-inner {
-        position: absolute;
-        top: 50%;
-        left: 48%;
-        transform: translate(-50%, -50%); 
-        width: 90%;
-        text-align: start;
-    }
-    .banner-bg-screen .banner-inner .span{
-        font-size: 1.70rem;
-        font-weight: 300;
-        color: #fff;
-        letter-spacing: 0.5px;
-        font-family: var(--font-family-one);
-    }
-    .banner-bg-screen .banner-inner h1{
-        padding-top: 10px;
-        font-size: 2rem;
-        color: #fff;
-        font-family: var(--font-family-one);
-        font-weight: 700;
-    }
-    .banner-bg-screen .banner-inner p{
-        font-family: var(--font-family-one);   
-        color: var(--orange);
-    }
-    .banner-bg-screen .banner-inner h4{
-        font-family: var(--font-family-one);   
-        font-size: 1.44rem;
-        font-weight: 700;
-        color: var(--orange);
-    }
-    .banner-bg-screen .banner-inner .btn{
-        background-color: var(--orange);
-        border: 2px solid var(--orange);
-        font-size: 1rem;
-        color: #fff;
-    }
-    
 
     /* parallax */
     #parallaxSection #headers h2{
@@ -368,6 +137,226 @@
         color: var(--white);
         margin-top: 15px;
     } 
+    
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+    #services .swapImg i{
+        font-size: 2rem !important;
+        margin-top: 100px !important;
+        padding: 5px !important;
+    }
+    #services .swapImg img{
+        width: 80px !important;
+        height: 250px !important;
+    }
+    #services img{
+        width: 200px !important;
+        height: 250px !important;
+    }
+    #services .card{
+        height: 500px !important;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    #navbar .nav-item a{
+        text-decoration: none;
+        font-family: var(--font-family-two);
+        color: var(--blue);
+        font-weight: 800;
+        font-size: 1rem;
+    }
+
+    /* banner */
+    .banner-bg-screen{
+        display: none;
+    }
+    .banner-sm-screen {
+        display: block;
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+        object-fit: contain;
+        background-image: -moz-linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, rgba(0, 0, 0, 0.5) ), url(/assets/img/banner.jpg);
+        background-image: -webkit-linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, rgba(0, 0, 0, 0.5) ), url(/assets/img/banner.jpg);
+        filter : progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#FC5518", GradientType=1 );  
+        background-image: linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, rgba(0, 0, 0, 0.5) ), url(/assets/img/banner.jpg);
+        position: relative;
+    }
+    .banner-sm-screen .banner-inner {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+        width: 90%;
+        text-align: start;
+    }
+    .banner-sm-screen .banner-inner .span{
+        font-size: 1.3rem;
+        font-weight: 300;
+        color: #fff;
+        letter-spacing: 0.5px;
+        font-family: var(--font-family-one);
+    }
+    .banner-sm-screen .banner-inner h1{
+        padding-top: 10px;
+        font-size: 1.3rem;
+        color: #fff;
+        font-family: var(--font-family-one);
+        font-weight: 900;
+    }
+    .banner-sm-screen .banner-inner h4{
+        font-family: var(--font-family-one);   
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--orange);
+    }
+
+     /* parallax */
+     #parallax-sm h2{
+        color: var(--white);
+        font-size: 1.5rem;
+        font-family: var(--font-family-one);
+        font-weight: 600;
+    }
+
+    #parallaxSection{
+        display: none;
+    }
+    #parallax-sm-screen {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/img//phoneswap.jpeg");
+        height: fit-content;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    #parallax-sm{
+        width: 100%;
+        height: max-content;
+    }
+    #parallax-sm p{
+        color: var(--white);
+    } 
+
+    /* logistics */
+    #logisticsParallaxSection{
+        display: none;
+    }
+    #logistics-parallax-sm-screen {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/img/red_truck.webp");
+        height: fit-content;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    #logistics-parallax-sm-screen{
+        width: 100%;
+        height: fit-content;
+    }
+    #logistics-parallax-sm-screen p{
+        color: var(--white);
+    } 
+
+
+    /* testimonial */
+    .carousel-comment {
+        height: 500px;
+        overflow: hidden; 
+    }
+    .carousel-comment h5{
+        font-weight: 800;
+    }
+    .testimonial-image i{
+        font-size: 30px;
+        color: var(--orange);
+        border: 1px solid var(--orange);
+        border-radius: 50%;
+        padding: 10px;
+        background-color: var(--white);
+    }
+    .carousel-control-next-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fc5518' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    }  
+    .carousel-control-prev-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fc5518' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+    }
+    .carousel-indicators [data-bs-target] {
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+    }
+    .carousel-dark .carousel-indicators [data-bs-target], .carousel-indicators [data-bs-target] {
+        background-color: var(--orange-dark);
+    }
+} 
+
+@media only screen and (min-width: 769px) {
+    /* navbar */
+    #navbar .nav-item a{
+        text-decoration: none;
+        font-family: var(--font-family-two);
+        color: var(--blue);
+        font-weight: 800;
+        font-size: 1rem;
+    }
+
+    /* banner */
+    .banner-sm-screen{
+        display: none;
+    }
+    .banner-bg-screen {
+        display: block;
+        width: 100%;
+        height: 500px;
+        background-size: cover;
+        background-image: -moz-linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, rgba(0, 0, 0, 0.5) ), url(/assets/img/banner.jpg);
+        background-image: -webkit-linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, rgba(0, 0, 0, 0.5) ), url(/assets/img/banner.jpg);
+        filter : progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#FC5518", GradientType=1 );  
+        background-image: linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, rgba(0, 0, 0, 0.5) ), url(/assets/img/banner.jpg);
+        position: relative;
+    } 
+    .banner-bg-screen .banner-inner {
+        position: absolute;
+        top: 50%;
+        left: 48%;
+        transform: translate(-50%, -50%); 
+        width: 90%;
+        text-align: start;
+    }
+    .banner-bg-screen .banner-inner .span{
+        font-size: 1.70rem;
+        font-weight: 300;
+        color: #fff;
+        letter-spacing: 0.5px;
+        font-family: var(--font-family-one);
+    }
+    .banner-bg-screen .banner-inner h1{
+        padding-top: 10px;
+        font-size: 2rem;
+        color: #fff;
+        font-family: var(--font-family-one);
+        font-weight: 700;
+    }
+    .banner-bg-screen .banner-inner p{
+        font-family: var(--font-family-one);   
+        color: var(--orange);
+    }
+    .banner-bg-screen .banner-inner h4{
+        font-family: var(--font-family-one);   
+        font-size: 1.44rem;
+        font-weight: 700;
+        color: var(--orange);
+    }
+    .banner-bg-screen .banner-inner .btn{
+        background-color: var(--orange);
+        border: 2px solid var(--orange);
+        font-size: 1rem;
+        color: #fff;
+    }
 
 
     /* gallery */
