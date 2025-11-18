@@ -1,9 +1,10 @@
 
 Gadget Store Website
+
 A simple, modern, and fully responsive gadget store website built using HTML, CSS, and Bootstrap. The site showcases gadgets, product categories, a gallery, logistics information, and a phone-swap service. 
 
-🚀 Live Demo
-View the website here: 👉 https://nestore.netlify.app
+Live Demo
+View the website here: https://nestore.netlify.app
 
 Pages Included
 Page	                      Description
