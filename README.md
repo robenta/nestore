@@ -24,11 +24,20 @@ Features
 * Mobile-first design
 * SEO-optimized meta tags 
 * Product grid using Bootstrap cards 
-* Simple and lightweight (no frameworks or backend required) 
+* Simple and lightweight (no frameworks or backend required)
+
 
 Technologies Used
 * HTML5 
 * CSS3 
 * Bootstrap 5 
 
+How to run
+* Clone the repository
 
+* Open in editor(Vscode)
+
+* Run via liveserver
+
+Status
+Completed
